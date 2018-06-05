@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { IseeqMenuComponent } from './components/iseeq-menu/iseeq-menu.component';
 import { IseeqHttpService } from './services/iseeq-http.service';
+import { IseeqMaterialModule } from './moduls/iseeq-material.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { IseeqHttpService } from './services/iseeq-http.service';
 
   imports: [
     BrowserModule,
+    IseeqMaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule
