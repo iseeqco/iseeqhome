@@ -1,0 +1,31 @@
+<div class="menu-container">
+
+    <div class="menu-logo-container">
+        Logo
+    </div>
+
+    <div class="menu-link-container">
+        <a *ngFor="let menuitem of menuItems" href="/{{menuitem.toLowerCase()}}">{{menuitem}}</a>
+    </div>
+
+</div>
+<p>Place holder</p>
+<div class="menu-container-s">
+    <div class="menu-flex-container-s">
+
+        <div class="menu-logo-container-s">
+            Logo
+        </div>
+
+        <div class="menu-control-s">
+            <span (click)="openCloseSMenu()">open-close </span>
+           
+        </div>
+            
+    </div>
+    
+    <div [@isOpen]="isSMenuOpen" class="menu-link-container-s">
+        <a *ngFor="let menuitem of menuItems" href="/{{menuitem.toLowerCase()}}">{{menuitem}}</a>
+    </div>
+
+</div>
