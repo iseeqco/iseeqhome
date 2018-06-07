@@ -1,31 +1,33 @@
-<div class="menu-container">
+<div [@menuIn] class="menu-container" *ngIf="!isMobileView && isMenuVisible">
 
     <div class="menu-logo-container">
-        Logo
+        <img src="./assets/pictures/logo/iseeq-logo_kicsi2.png " alt="iseeq logo">
     </div>
 
     <div class="menu-link-container">
-        <a *ngFor="let menuitem of menuItems" href="/{{menuitem.toLowerCase()}}">{{menuitem}}</a>
+        <a *ngFor="let menuitem of menuItems" routerLink="/{{menuitem.toLowerCase()}}" routerLinkActive="active-link">{{menuitem}}</a>
     </div>
 
 </div>
+
 <p>Place holder</p>
-<div class="menu-container-s">
+
+<div [@menuIn] class="menu-container-s" *ngIf="isMobileView && isMenuVisible">
     <div class="menu-flex-container-s">
 
         <div class="menu-logo-container-s">
-            Logo
+            <img src="./assets/pictures/logo/iseeq-logo_kicsi2.png " alt="iseeq logo">
         </div>
 
         <div class="menu-control-s">
-            <span (click)="openCloseSMenu()">open-close </span>
-           
+            <mat-icon (click)="openCloseSMenu()">{{sMenuIcon}}</mat-icon>
         </div>
             
     </div>
     
     <div [@isOpen]="isSMenuOpen" class="menu-link-container-s">
-        <a *ngFor="let menuitem of menuItems" href="/{{menuitem.toLowerCase()}}">{{menuitem}}</a>
+        <a *ngFor="let menuitem of menuItems" routerLink="/{{menuitem.toLowerCase()}}" routerLinkActive="active-link">{{menuitem}}</a>
     </div>
 
 </div>
+

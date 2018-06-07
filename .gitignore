@@ -9,6 +9,9 @@
 /node_modules
 /functions/node_modules
 
+#Pictures
+/assets/pictures/logo
+
 # IDEs and editors
 /.idea
 .project
