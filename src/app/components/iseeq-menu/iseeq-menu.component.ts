@@ -35,11 +35,15 @@ export class IseeqMenuComponent implements OnInit {
     onScroll(){
       if(window.pageYOffset>10){
         this.isMenuVisible=true;
+        this._router.navigate(['/services']);
       } 
       else {
         this.isMenuVisible=false;
         this._router.navigate(['']);
       }
+
+      
+      
     }
 
   constructor(

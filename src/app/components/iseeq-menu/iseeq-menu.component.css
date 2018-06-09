@@ -21,6 +21,7 @@ img{
     padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     opacity:0.9;
+    z-index: +1;
 }
 .menu-logo-container{
     flex-grow: 2;
@@ -40,6 +41,7 @@ img{
     position: fixed;
     top:0px;
     width:100%;
+    z-index: +1;
 }
 .menu-flex-container-s{
     display:flex;
