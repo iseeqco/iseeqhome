@@ -8,11 +8,6 @@ import { IseeqTeamComponent } from '../ContetntFeature/components/iseeq-team/ise
 import { IseeqAboutComponent } from '../ContetntFeature/components/iseeq-about/iseeq-about.component';
 import { DINAMIC_COMPONENT_LIST } from '../../assets/config/dinamic-component-list';
 
-export class test {
-   constructor(
-    public testname:Type<any>){}
-}
-
 @Injectable()
 export class IseeqNavigationService{
         
