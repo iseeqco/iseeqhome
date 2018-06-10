@@ -19,23 +19,17 @@ export class IseeqNavigationService{
         menuItemsObs:Observable<NavigationData>;
         menuItemsArr:NavigationData[]
 
-        test:any=DINAMIC_COMPONENT_LIST
-
     constructor(private iseeqHttp : IseeqHttpService){
         this.menuItemsObs=this.iseeqHttp.getMenuItems()
         this.menuItemsObs.subscribe(data=>{
                                             this.menuItemsArr=data['menuitems'];
-                                                
-                                        })
-        console.log(test)
-        console.log(DINAMIC_COMPONENT_LIST.get("IseeqServicesComponent"))
+                                          })
     }
 
     public getMenuItem():Observable<NavigationData>{
        return  this.menuItemsObs;
     }
 
-    
     public setOpenedContentBasedOnRouterParam(param:string) {
         let t :Type<any>=DINAMIC_COMPONENT_LIST.get("IseeqServicesComponent")
         let contentComponents2=[t]
