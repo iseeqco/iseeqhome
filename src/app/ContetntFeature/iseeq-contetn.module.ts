@@ -30,6 +30,14 @@ export const contentRoutes : Routes=[
     IseeqClientsComponent,
     IseeqNewsComponent,
     IseeqContactComponent,
-  ]
+  ],
+  entryComponents:[
+    IseeqServicesComponent,
+    IseeqBaseContentComponent,
+    IseeqTeamComponent,
+    IseeqAboutComponent,
+    IseeqClientsComponent,
+    IseeqNewsComponent,
+    IseeqContactComponent]  /*************** */
 })
 export class IseeqContetnModule { }

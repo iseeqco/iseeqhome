@@ -10,6 +10,7 @@ export class IseeqServicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('juhhhuuuu')
   }
 
 }

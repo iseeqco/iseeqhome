@@ -1,1 +1,8 @@
-{"menuitems":["SERVICES","TEAM","ABOUT","CLIENTS","NEWS","CONTACT"]}
+{
+ "menuitems":[  {"menuItem":"SERVICES","componentName":"IseeqServicesComponent"},
+                {"menuItem":"TEAM","componentName":"IseeqTeamComponent"},
+                {"menuItem":"ABOUT","componentName":"IseeqAboutComponent"},
+                {"menuItem":"CLIENTS","componentName":"IseeqClientsComponent"},
+                {"menuItem":"NEWS","componentName":"IseeqNewsComponent"},
+                {"menuItem":"CONTACT","componentName":"IseeqContactComponent"}  ]
+}

@@ -3,6 +3,7 @@ import {trigger,state,style,animate,transition} from '@angular/animations';
 import { Router} from '@angular/router';
 
 import { IseeqNavigationService } from '../../services/iseeq-navigation.service';
+import { NavigationData } from '../../datatypes/iseeq-navigation.data';
 
 @Component({
   selector: 'app-iseeq-menu',
@@ -19,8 +20,8 @@ import { IseeqNavigationService } from '../../services/iseeq-navigation.service'
   ]
 })
 export class IseeqMenuComponent implements OnInit {
-   
-    menuItems:string[]
+    
+    menuItems:NavigationData[]
     isMenuVisible:boolean;
     isMobileView:boolean;
     isSMenuOpen:string;
