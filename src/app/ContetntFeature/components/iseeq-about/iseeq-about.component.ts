@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener } from "@angular/core";
+import { ElementRef } from "@angular/core";
 
 @Component({
   selector: 'app-iseeq-about',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./iseeq-about.component.css']
 })
 export class IseeqAboutComponent implements OnInit {
+@HostListener('window:scroll')
+    onScroll(){
+      console.log("abaut"+this.thisElement.nativeElement.offsetTop)
+      console.log("abaut"+window.pageYOffset)
 
-  constructor() { }
+    }
+  constructor(private thisElement:ElementRef,) { }
 
   ngOnInit() {
   }
