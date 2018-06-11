@@ -26,6 +26,7 @@ export class IseeqMenuComponent implements OnInit {
     isMobileView:boolean;
     isSMenuOpen:string;
     sMenuIcon:string;
+    isFirstScroll:boolean;
 
   @HostListener('window:resize')
     onResize(){
@@ -34,13 +35,17 @@ export class IseeqMenuComponent implements OnInit {
 
   @HostListener('window:scroll')
     onScroll(){
+      if(this.isFirstScroll){
+        console.log("first volt");
+        this.isFirstScroll=false;
+        this._router.navigate(['/services'])
+      }  
+
       if(window.pageYOffset>10){
         this.isMenuVisible=true;
-        this._router.navigate(['/services']);
       } 
       else {
         this.isMenuVisible=false;
-        this._router.navigate(['']);
       }
 
       
@@ -55,6 +60,7 @@ export class IseeqMenuComponent implements OnInit {
     this.isSMenuOpen='false';
     this.sMenuIcon='menu'
     this.isMenuVisible=false;
+    this.isFirstScroll=true;
   }
 
   ngOnInit(){

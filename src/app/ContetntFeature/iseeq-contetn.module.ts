@@ -4,13 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { IseeqContentMaterialModule } from './moduls/iseeq-content-material/iseeq-content-material.module';
 
-import { IseeqServicesComponent } from './components/iseeq-services/iseeq-services.component';
 import { IseeqBaseContentComponent } from './components/iseeq-base-content/iseeq-base-content.component';
+
+import { IseeqServicesComponent } from './components/iseeq-services/iseeq-services.component';
 import { IseeqTeamComponent } from './components/iseeq-team/iseeq-team.component';
 import { IseeqAboutComponent } from './components/iseeq-about/iseeq-about.component';
 import { IseeqClientsComponent } from './components/iseeq-clients/iseeq-clients.component';
 import { IseeqNewsComponent } from './components/iseeq-news/iseeq-news.component';
 import { IseeqContactComponent } from './components/iseeq-contact/iseeq-contact.component';
+
 
 
 export const contentRoutes : Routes=[
@@ -38,6 +40,10 @@ export const contentRoutes : Routes=[
     IseeqAboutComponent,
     IseeqClientsComponent,
     IseeqNewsComponent,
-    IseeqContactComponent]  /*************** */
-})
+    IseeqContactComponent
+  ],
+  providers: [
+    
+  ],
+  })
 export class IseeqContetnModule { }
