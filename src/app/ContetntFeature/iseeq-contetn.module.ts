@@ -13,6 +13,10 @@ import { IseeqClientsComponent } from './components/iseeq-clients/iseeq-clients.
 import { IseeqNewsComponent } from './components/iseeq-news/iseeq-news.component';
 import { IseeqContactComponent } from './components/iseeq-contact/iseeq-contact.component';
 
+import { IseeqContentSiteDirective } from './direktives/iseeq-content-site.direktive';
+
+
+
 
 
 export const contentRoutes : Routes=[
@@ -32,18 +36,13 @@ export const contentRoutes : Routes=[
     IseeqClientsComponent,
     IseeqNewsComponent,
     IseeqContactComponent,
+    IseeqContentSiteDirective
   ],
   entryComponents:[
-    IseeqServicesComponent,
-    IseeqBaseContentComponent,
-    IseeqTeamComponent,
-    IseeqAboutComponent,
-    IseeqClientsComponent,
-    IseeqNewsComponent,
-    IseeqContactComponent
+    
   ],
   providers: [
-    
+   
   ],
   })
 export class IseeqContetnModule { }

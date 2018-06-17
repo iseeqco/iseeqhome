@@ -1,5 +1,11 @@
+<div style="scroll-behavior: auto" [style.visibility]="navService.isContentVisible ? 'visible':'hidden'" >
+    <app-iseeq-services iseeqContentSite *ngIf="navService.componentRemote[0]" [isFirstSite]="true" ></app-iseeq-services>
+    <app-iseeq-team     iseeqContentSite  *ngIf="navService.componentRemote[1]" ></app-iseeq-team>
+    <app-iseeq-about    iseeqContentSite *ngIf="navService.componentRemote[2]" ></app-iseeq-about>
+    <app-iseeq-clients  iseeqContentSite *ngIf="navService.componentRemote[3]" ></app-iseeq-clients>
+    <app-iseeq-news     iseeqContentSite  *ngIf="navService.componentRemote[4]" ></app-iseeq-news>
+    <app-iseeq-contact  iseeqContentSite *ngIf="navService.componentRemote[5]" ></app-iseeq-contact>
+</div>
 
-<!-- <app-iseeq-services *ngIf="_iNavService.openedContent[0]"></app-iseeq-services> -->
-<ng-template #template ></ng-template>
 
 

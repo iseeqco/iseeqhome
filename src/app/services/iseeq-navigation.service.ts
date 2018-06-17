@@ -1,5 +1,5 @@
-import { Injectable, ViewRef, Type } from '@angular/core';
-import { Observable, of,Subject } from 'rxjs';
+import { Injectable} from '@angular/core';
+import { Observable, BehaviorSubject} from 'rxjs';
 
 import { IseeqHttpService } from './iseeq-http.service';
 
@@ -8,38 +8,61 @@ import { NavigationData} from '../datatypes/iseeq-navigation.data'
 
 @Injectable()
 export class IseeqNavigationService{
-
+        
         menuItemsObs:Observable<NavigationData>;
         menuItemsArr:NavigationData[];
-
-        nextSiteKeyByScrollSubj= new Subject<string>()
-        nextSiteKeyByScrollObs=this.nextSiteKeyByScrollSubj.asObservable();
+        componentRemote:boolean[];
+        isFirstScrollSinceRouting:boolean;
+        isContentVisible:boolean;
+        loadedContentCounter:number;
+        $isContentLoaded :BehaviorSubject<boolean>;
+        isScrollNavigation:boolean;                 
 
     constructor(private iseeqHttp : IseeqHttpService){
-        this.menuItemsObs=this.iseeqHttp.getMenuItems()
+        this.menuItemsObs=this.iseeqHttp.getMenuItems();
         this.menuItemsObs.subscribe(data=>{
                                             this.menuItemsArr=data['menuitems'];
-                                        })
-        this.addNextSiteKeyByScroll();                                
-        }
+                                            this.createComponentRemote();
+                                        });
+        this.componentRemote=[];
+        this.isFirstScrollSinceRouting=true;
+        this.isContentVisible=true;
+        this.loadedContentCounter=0;
+        this.$isContentLoaded=new BehaviorSubject(false)
+        
+    }
 
+    public createComponentRemote(){
+        this.menuItemsArr.forEach(item=>{
+        this.componentRemote.push(false)
+            })
+    }
+    
     public getMenuItem():Observable<NavigationData>{
        return  this.menuItemsObs;
     }
 
-    public setOpenedContentBasedOnRouterParam(param:string) {
-        let contentComponents:string[]=[]
-        for(let menuitem of this.menuItemsArr){
-            contentComponents.push(menuitem.componentName)
-            if(menuitem.menuItem.toLowerCase() == param){break}
+    public openOneSite(siteName:string){
+        for(let i=0;i<this.componentRemote.length;i++){this.componentRemote[i]=false}
+        for(let i=0;i<this.menuItemsArr.length;i++){
+            if (this.menuItemsArr[i].menuItem.toLowerCase()==siteName){
+                this.componentRemote[i]=true;
+                break
+            }
         }
-        return   contentComponents
     } 
 
-    public addNextSiteKeyByScroll(){
-        console.log("add next site key lefut")
-       // this.nextSiteKeyByScrollSubj.next('IseeqNewsComponent')
-        this.nextSiteKeyByScrollSubj.subscribe(data=>console.log("data2"+data))
-        this.nextSiteKeyByScrollObs.subscribe(data=>console.log("data3"+data))
+    public openAllSite() :void {
+        this.loadedContentCounter=0;
+        for(let i=0;i<this.componentRemote.length;i++){this.componentRemote[i]=true}
     }
+
+    public contentLoadObserver(){
+        this.loadedContentCounter++;
+        if(this.loadedContentCounter == (this.menuItemsArr.length-1)){
+            this.loadedContentCounter=0;
+            this.$isContentLoaded.next(true);
+        }
+    }
+    
 }

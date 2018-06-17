@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import {trigger,state,style,animate,transition} from '@angular/animations';
-import { Router} from '@angular/router';
+import { Router, ActivatedRoute} from '@angular/router';
 
 import { IseeqNavigationService } from '../../services/iseeq-navigation.service';
 import { NavigationData } from '../../datatypes/iseeq-navigation.data';
@@ -26,8 +26,7 @@ export class IseeqMenuComponent implements OnInit {
     isMobileView:boolean;
     isSMenuOpen:string;
     sMenuIcon:string;
-    isFirstScroll:boolean;
-
+    
   @HostListener('window:resize')
     onResize(){
       if(window.innerWidth < 700){this.isMobileView=true} else {this.isMobileView=false};
@@ -35,37 +34,29 @@ export class IseeqMenuComponent implements OnInit {
 
   @HostListener('window:scroll')
     onScroll(){
-      if(this.isFirstScroll){
-        console.log("first volt");
-        this.isFirstScroll=false;
-        this._router.navigate(['/services'])
-      }  
-
-      if(window.pageYOffset>10){
+     if(window.pageYOffset>10){
         this.isMenuVisible=true;
       } 
       else {
         this.isMenuVisible=false;
       }
-
-      
-      
-    }
+  }
 
   constructor(
     private _iseeqNavigationService: IseeqNavigationService,
-    private _router : Router
+    private _router : Router,
+    private _route : ActivatedRoute
   )
   {
     this.isSMenuOpen='false';
     this.sMenuIcon='menu'
     this.isMenuVisible=false;
-    this.isFirstScroll=true;
   }
 
   ngOnInit(){
     this._iseeqNavigationService.getMenuItem().subscribe(data=>this.menuItems=data['menuitems']);
     if(window.innerWidth < 700){this.isMobileView=true}
+    
   }
 
   openCloseSMenu(){

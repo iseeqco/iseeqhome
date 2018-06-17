@@ -1,5 +1,6 @@
-import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef, Type, ComponentRef, ViewRef } from '@angular/core';
+import { Component, OnInit, ViewChild, Type, HostListener} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 import { IseeqNavigationService } from '../../../services/iseeq-navigation.service';
 
 import { IseeqServicesComponent } from "src/app/ContetntFeature/components/iseeq-services/iseeq-services.component";
@@ -15,45 +16,42 @@ import { IseeqContactComponent } from "src/app/ContetntFeature/components/iseeq-
   styleUrls: ['./iseeq-base-content.component.css']
 })
 export class IseeqBaseContentComponent implements OnInit {
-   @ViewChild('template',{read:ViewContainerRef}) baseContentView: ViewContainerRef; 
-    
-    DINAMIC_COMPONENT_LIST =new Map().set('IseeqServicesComponent',IseeqServicesComponent)
-                                                    .set('IseeqTeamComponent',IseeqTeamComponent)
-                                                    .set('IseeqAboutComponent',IseeqAboutComponent)
-                                                    .set('IseeqClientsComponent',IseeqClientsComponent)
-                                                    .set('IseeqNewsComponent',IseeqNewsComponent)
-                                                    .set('IseeqContactComponent',IseeqContactComponent)
+   /*@ViewChild(IseeqServicesComponent) private servicesComponent; //Ezeket Lehet KI KELL VENNI
+   @ViewChild(IseeqTeamComponent) private teamComponent
+   @ViewChild(IseeqAboutComponent) private aboutComponent
+   @ViewChild(IseeqClientsComponent) private clientsComponent
+   @ViewChild(IseeqNewsComponent) private newsComponent
+   @ViewChild(IseeqContactComponent) private contactComponent
+   
+  /* @HostListener('mousewheel')
+      onwheel(){
+      }*/
+   
+         routerParam:string;
 
-   constructor(
+  constructor(
     private _route : ActivatedRoute,
-    private _iNavService :IseeqNavigationService,
-    private componentFactoryResolver: ComponentFactoryResolver 
+    private navService :IseeqNavigationService,
+    
   ) 
   { 
-
+    
   }
+
 
   ngOnInit() {
-  this._route.paramMap.subscribe(data=>{  
-              this.createSiteContent(this._iNavService.setOpenedContentBasedOnRouterParam(data.get('site')))
-          }) 
-  this._iNavService.nextSiteKeyByScrollObs.subscribe(data=>console.log(data))
-console.log("base content init");  
-}
-
-      //meg kell oldani hogy meg legyen hivva   Pl hivas .:this.addNextSite('IseeqNewsComponent') //
-  addNextSite(site:string){
-      let contentComponent:Type<any>=this.DINAMIC_COMPONENT_LIST.get(site)
-      let componentFactory = this.componentFactoryResolver.resolveComponentFactory(contentComponent)
-      this.baseContentView.createComponent(componentFactory)
+    this._route.paramMap.subscribe(data=>{
+      if(!this.navService.isScrollNavigation){
+        this.routerParam=data.get('site')  
+        this.navService.openOneSite(this.routerParam)
+      }
+    })
   }
+   
 
-  createSiteContent(components:string[]){
-    this.baseContentView.clear();
-      components.forEach((data)=>{
-          let contentComponent:Type<any>=this.DINAMIC_COMPONENT_LIST.get(data)
-          let componentFactory = this.componentFactoryResolver.resolveComponentFactory(contentComponent)
-          this.baseContentView.createComponent(componentFactory)
-     })
-    }
+ // ngAfterViewInit() {console.log('WIEW INIT')}
+
+  //ngAfterViewChecked() {console.log('WIEW CHECKED')}
+
+ // ngAfterContentInit() {console.log('AFTER CONTETN')}
 }

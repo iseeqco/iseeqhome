@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
+import { IseeqNavigationService } from '../../../services/iseeq-navigation.service';
 
 @Component({
   selector: 'app-iseeq-news',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./iseeq-news.component.css']
 })
 export class IseeqNewsComponent implements OnInit {
+  
+constructor(
+  private thisElement:ElementRef,
+  private navServive:IseeqNavigationService
+) { }
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {console.log("News init"+this.thisElement.nativeElement.offsetTop)
+  
+   // this.thisElement.nativeElement.scrollIntoView();
+  
   }
 
+  ngAfterViewInit() {
+    this.navServive.contentLoadObserver();
+  }
+  
+  public IseeqscrollToTop() : void {
+   // this.thisElement.nativeElement.scrollIntoView();
+  }
 }
