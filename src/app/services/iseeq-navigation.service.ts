@@ -3,11 +3,9 @@ import { Observable, of,Subject } from 'rxjs';
 
 import { IseeqHttpService } from './iseeq-http.service';
 
-<<<<<<< HEAD
-=======
-import { NavigationData} from '../datatypes/iseeq-navigation.data';
+import { NavigationData} from '../datatypes/iseeq-navigation.data'
 
->>>>>>> 065c804dbca32c2b7f3356bb9787948daf3ed706
+
 @Injectable()
 export class IseeqNavigationService{
 
