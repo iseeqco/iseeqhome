@@ -14,17 +14,8 @@ constructor(
   private navServive:IseeqNavigationService
 ) { }
 
-  ngOnInit() {console.log("News init"+this.thisElement.nativeElement.offsetTop)
-  
-   // this.thisElement.nativeElement.scrollIntoView();
+  ngOnInit() {
   
   }
 
-  ngAfterViewInit() {
-    this.navServive.contentLoadObserver();
-  }
-  
-  public IseeqscrollToTop() : void {
-   // this.thisElement.nativeElement.scrollIntoView();
-  }
 }

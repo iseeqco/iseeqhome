@@ -16,17 +16,7 @@ import { IseeqContactComponent } from "src/app/ContetntFeature/components/iseeq-
   styleUrls: ['./iseeq-base-content.component.css']
 })
 export class IseeqBaseContentComponent implements OnInit {
-   /*@ViewChild(IseeqServicesComponent) private servicesComponent; //Ezeket Lehet KI KELL VENNI
-   @ViewChild(IseeqTeamComponent) private teamComponent
-   @ViewChild(IseeqAboutComponent) private aboutComponent
-   @ViewChild(IseeqClientsComponent) private clientsComponent
-   @ViewChild(IseeqNewsComponent) private newsComponent
-   @ViewChild(IseeqContactComponent) private contactComponent
-   
-  /* @HostListener('mousewheel')
-      onwheel(){
-      }*/
-   
+ 
          routerParam:string;
 
   constructor(
@@ -38,20 +28,14 @@ export class IseeqBaseContentComponent implements OnInit {
     
   }
 
-
   ngOnInit() {
     this._route.paramMap.subscribe(data=>{
-      if(!this.navService.isScrollNavigation){
+      if(!this.navService.isScrollNavigation){       
+                                                      
         this.routerParam=data.get('site')  
         this.navService.openOneSite(this.routerParam)
       }
     })
   }
    
-
- // ngAfterViewInit() {console.log('WIEW INIT')}
-
-  //ngAfterViewChecked() {console.log('WIEW CHECKED')}
-
- // ngAfterContentInit() {console.log('AFTER CONTETN')}
 }

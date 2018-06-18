@@ -19,4 +19,5 @@
 
 
 Nice  To Have:
-    a remoteComponent tombot a navigation data-ba integrálni
+   -- a remoteComponent tombot a navigation data-ba integrálni
+   -- java script browserbe true/false ellenőrzés az index HTML-be.
