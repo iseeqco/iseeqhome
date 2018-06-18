@@ -9,6 +9,16 @@ import { Router } from '@angular/router';
 export class IseeqHomeComponent implements OnInit {
         
         previousScrollPosition:number;
+  @HostListener('touchmove',['$event'])
+      onTouch(event:any){
+       // https://stackoverflow.com/questions/33116397/scroll-direction-on-phone
+        console.log("new event")
+        console.log(event.changedTouches[0].pageY)
+     /* if(this.previousScrollPosition==window.pageYOffset){
+          this.router.navigate(['/home/services'])
+        }
+        this.previousScrollPosition=window.pageYOffset;*/
+      }
 
   @HostListener('mousewheel',['$event'])
     onWheel(event:any){

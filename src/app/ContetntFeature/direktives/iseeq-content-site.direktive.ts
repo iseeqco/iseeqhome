@@ -17,8 +17,27 @@ export class IseeqContentSiteDirective {
 
   subscription:Subscription;
   
+  @HostListener('touchmove',['$event'])
+    onMove(event:any){
+      let navBackToHome:boolean;
+      if(this.isFirstSite){
+        if(window.pageYOffset==0){
+          this.router.navigate(['/home']);
+          navBackToHome=true;
+        }
+      }
+      
+      if(!navBackToHome){
+        this.scrollOnComponent();
+        this.navServive.isScrollNavigation=true;
+        setTimeout(()=>this.navServive.isScrollNavigation=false,300);
+        this.router.navigate([this.scrollNavigationParam]);
+      }
+    }
+
   @HostListener('mousewheel',['$event'])
     onWheel(event:any){
+      console.log("wheel")
       let navBackToHome:boolean;
       if(this.isFirstSite){
         if( (event.deltaY<0) && (window.pageYOffset==0) ){

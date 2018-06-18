@@ -21,7 +21,7 @@ export class IseeqBaseContentComponent implements OnInit {
 
   constructor(
     private _route : ActivatedRoute,
-    private navService :IseeqNavigationService,
+    public navService :IseeqNavigationService,
     
   ) 
   { 
