@@ -1,22 +1,8 @@
 
- 
-
-        
+ felfele scroll ra szarul jonnek be az aloldalak
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ -side baar vezerles mindenhol.
 
 Nice  To Have:
    -- a remoteComponent tombot a navigation data-ba integrálni

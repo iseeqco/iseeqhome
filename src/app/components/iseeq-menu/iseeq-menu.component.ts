@@ -35,7 +35,7 @@ export class IseeqMenuComponent implements OnInit {
   @HostListener('window:scroll')
     onScroll(){
      if(window.pageYOffset>10){
-       this.isMenuVisible=true;
+        this.isMenuVisible=true;
       } 
       else {
         this.isMenuVisible=false;

@@ -13,10 +13,9 @@ export class IseeqNavigationService{
         menuItemsArr:NavigationData[];
         componentRemote:boolean[];
         isFirstScrollSinceRouting:boolean;
-        isContentVisible:boolean;
         loadedContentCounter:number;
         $isContentLoaded :BehaviorSubject<boolean>;
-        isScrollNavigation:boolean;                 
+                      
 
     constructor(private iseeqHttp : IseeqHttpService){
         this.menuItemsObs=this.iseeqHttp.getMenuItems();
@@ -26,7 +25,6 @@ export class IseeqNavigationService{
                                         });
         this.componentRemote=[];
         this.isFirstScrollSinceRouting=true;
-        this.isContentVisible=true;
         this.loadedContentCounter=0;
         this.$isContentLoaded=new BehaviorSubject(false)
         
@@ -43,7 +41,10 @@ export class IseeqNavigationService{
     }
 
     public openOneSite(siteName:string){
-        for(let i=0;i<this.componentRemote.length;i++){this.componentRemote[i]=false}
+        this.loadedContentCounter=0;
+        for(let i=0;i<this.componentRemote.length;i++){this.componentRemote[i]=false
+                 console.log(this.componentRemote[i])}
+
         for(let i=0;i<this.menuItemsArr.length;i++){
             if (this.menuItemsArr[i].menuItem.toLowerCase()==siteName){
                 this.componentRemote[i]=true;
@@ -53,13 +54,15 @@ export class IseeqNavigationService{
     } 
 
     public openAllSite() :void {
-        this.loadedContentCounter=0;
+        this.loadedContentCounter=1;
+        for(let i=0;i<this.componentRemote.length;i++){this.componentRemote[i]=false}
+        
         for(let i=0;i<this.componentRemote.length;i++){this.componentRemote[i]=true}
     }
 
     public contentLoadObserver(){
         this.loadedContentCounter++;
-        if(this.loadedContentCounter == (this.menuItemsArr.length-1)){
+        if(this.loadedContentCounter == (this.menuItemsArr.length)){
             this.loadedContentCounter=0;
             this.$isContentLoaded.next(true);
         }
