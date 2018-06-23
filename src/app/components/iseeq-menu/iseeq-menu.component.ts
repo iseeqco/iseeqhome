@@ -43,9 +43,9 @@ export class IseeqMenuComponent implements OnInit {
   }
 
   constructor(
-    private _iseeqNavigationService: IseeqNavigationService,
-    private _router : Router,
-    private _route : ActivatedRoute
+    private  navService: IseeqNavigationService,
+    private _router : Router,           //out
+    private _route : ActivatedRoute    //out
   )
   {
     this.isSMenuOpen='false';
@@ -54,7 +54,7 @@ export class IseeqMenuComponent implements OnInit {
   }
 
   ngOnInit(){
-    this._iseeqNavigationService.getMenuItem().subscribe(data=>this.menuItems=data['menuitems']);
+    this.navService.getMenuItem().subscribe(data=>this.menuItems=data['menuitems']);
     if(window.innerWidth < 700){this.isMobileView=true}
     
   }
@@ -67,5 +67,9 @@ export class IseeqMenuComponent implements OnInit {
       {this.isSMenuOpen="false";
        this.sMenuIcon="menu"}
   }
-
+ 
+  private scrollToComponent(component:string) : void {
+    let position = this.navService.getComponentPosition('/home/'+component)
+    window.scrollTo({top:position,behavior: "smooth"})
+  }
 }

@@ -1,9 +1,35 @@
 
- felfele scroll ra szarul jonnek be az aloldalak
 
 
- -side baar vezerles mindenhol.
+
+
+
 
 Nice  To Have:
    -- a remoteComponent tombot a navigation data-ba integrálni
    -- java script browserbe true/false ellenőrzés az index HTML-be.
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------SABLONOK---------------------
+   console.log("body offSetH"+document.body.offsetHeight)
+       console.log("scrolly"+window.scrollY)
+       console.log("W innie heigh"+window.innerHeight)
+       console.log(event.touches[0].clientY)
+
+
+   TOUCH NAVIGÁCIÓ
+   -------------------------
+        let aktuel:number
+        aktuel=event.touches[0].clientY
+        
+        if ( (aktuel>this.elozoTouchPos) && (window.pageYOffset==0) ){console.log("felfele scroll NAVI")}
+        if (aktuel<this.elozoTouchPos){console.log("lefele scroll")}
+        this.elozoTouchPos=aktuel;
