@@ -11,7 +11,12 @@ import { IseeqNavigationService } from './services/iseeq-navigation.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private navService :IseeqNavigationService){}
+  constructor(
+    public appNavService :IseeqNavigationService
+  )
+  {
+
+  }
   
   
   

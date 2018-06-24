@@ -1,8 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@font-face {
+    font-family:'bitbold';
+    src: url('./assets/fonts/bitbold-webfont.woff') format('woff'),
+         url('./assets/fonts/bitbold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family:'bitbold';
+    src: url('./assets/fonts/bitbold-webfont.woff') format('woff'),
+         url('./assets/fonts/bitbold-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family:'brandon';
+    src: url('./assets/fonts/brandon_reg-webfont.woff') format('woff'),
+         url('./assets/fonts/brandon_reg-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family:'brandonbld';
+    src: url('./assets/fonts/brandon_bld-webfont.woff') format('woff'),
+         url('./assets/fonts/brandon_bld-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family:'opensans';
+    src: url('./assets/fonts/opensans-regular-webfont.woff') format('woff'),
+         url('./assets/fonts/opensans-regular-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family:'opensansbld';
+    src: url('./assets/fonts/opensans-bold-webfont.woff') format('woff'),
+         url('./assets/fonts/opensans-bold-webfont.woff2') format('woff2');
+}
+
 body{
     margin:0px;
     background-color:white;
    
+}
+
+a{
+    text-decoration: none;
 }

@@ -17,10 +17,12 @@ import { IseeqHomeComponent } from './components/iseeq-home/iseeq-home.component
 import { IseeqFooterComponent } from './components/iseeq-footer/iseeq-footer.component';
 import { IseeqSitemapComponent } from './components/iseeq-sitemap/iseeq-sitemap.component';
 import { IseeqPrivacypolicyComponent } from './components/iseeq-privacypolicy/iseeq-privacypolicy.component';
-import { IseeqPagenotfoundComponent } from './components/iseeq-pagenotfound/iseeq-pagenotfound.component';
+
 
 
 export const routes: Routes =[
+  {path: 'SiteMap',component:IseeqSitemapComponent},
+  {path: 'PrivacyPolicy',component:IseeqPrivacypolicyComponent},
   {path: 'home',component:IseeqHomeComponent},
   {path: 'home/:site', loadChildren: './ContetntFeature/iseeq-contetn.module#IseeqContetnModule'},
   {path: '', redirectTo:'home',pathMatch:'full'},
@@ -34,9 +36,7 @@ export const routes: Routes =[
     IseeqHomeComponent,
     IseeqFooterComponent,
     IseeqSitemapComponent,
-    IseeqPrivacypolicyComponent,
-    IseeqPagenotfoundComponent,
-   
+    IseeqPrivacypolicyComponent, 
   ],
 
   imports: [
