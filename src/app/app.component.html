@@ -1,9 +1,3 @@
 <app-iseeq-menu></app-iseeq-menu>
-
-<!--<div style="
-background-color: aqua;width:100%;height:800px;text-align:cenrer;box-sizing:border-box;padding-top:200px">
-    <h1> Játék Háttérkép</h1>
-</div>-->
-
 <router-outlet></router-outlet>
-
+<app-iseeq-footer [style.visibility]="!appNavService.areSitesOpen ? 'hidden' : 'visible'" ></app-iseeq-footer>

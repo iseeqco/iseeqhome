@@ -1,9 +1,56 @@
 
- felfele scroll ra szarul jonnek be az aloldalak
+Footer-be linkeket beillesztei felirattal !!!!!
 
 
- -side baar vezerles mindenhol.
+
+Game Faeature
+HomeComponent NAvigáljon a Game Featurre
+PrivacyPolicy => Faeature alapra
+PageNotFound == SiteMap egyiket törölni /SITEMAP marad/
+
+
+Oldaltartalmak JSON-be 
+
+
+
+
 
 Nice  To Have:
    -- a remoteComponent tombot a navigation data-ba integrálni
    -- java script browserbe true/false ellenőrzés az index HTML-be.
+
+    ---képeket takaritani ami nem kell
+   
+
+lang atribute to the page
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------SABLONOK---------------------
+   console.log("body offSetH"+document.body.offsetHeight)
+       console.log("scrolly"+window.scrollY)
+       console.log("W innie heigh"+window.innerHeight)
+       console.log(event.touches[0].clientY)
+
+
+   TOUCH NAVIGÁCIÓ
+   -------------------------
+        let aktuel:number
+        aktuel=event.touches[0].clientY
+        
+        if ( (aktuel>this.elozoTouchPos) && (window.pageYOffset==0) ){console.log("felfele scroll NAVI")}
+        if (aktuel<this.elozoTouchPos){console.log("lefele scroll")}
+        this.elozoTouchPos=aktuel;
+
+
+
+-------------------------------------------------------------------------------
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}

@@ -5,7 +5,10 @@
     </div>
 
     <div class="menu-link-container">
-        <a *ngFor="let menuitem of menuItems" routerLink="/home/{{menuitem.menuItem.toLowerCase()}}" routerLinkActive="active-link">{{menuitem.menuItem}}</a>
+        <a *ngFor="let menuitem of menuItems" 
+            routerLink="/home/{{menuitem.menuItem.toLowerCase()}}" 
+            routerLinkActive="active-link"
+            (click)="scrollToComponent(menuitem.menuItem.toLowerCase())">{{menuitem.menuItem}}</a>
     </div>
 
 </div>
@@ -25,8 +28,12 @@
             
     </div>
     
-    <div [@isOpen]="isSMenuOpen" class="menu-link-container-s">
-        <a *ngFor="let menuitem of menuItems" routerLink="/home/{{menuitem.menuItem.toLowerCase()}}" routerLinkActive="active-link">{{menuitem.menuItem}}</a>
+    <div [@isOpen]="isSMenuOpen" class="menu-link-container-s" (click)="openCloseSMenu()" >
+
+        <a *ngFor="let menuitem of menuItems" 
+            routerLink="/home/{{menuitem.menuItem.toLowerCase()}}" 
+            routerLinkActive="active-link"
+            (click)="scrollToComponent(menuitem.menuItem.toLowerCase())">{{menuitem.menuItem}}</a>
     </div>
 
 </div>
