@@ -1,0 +1,32 @@
+.services-container{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.services-collum{
+    margin:20px;
+    width:300px;
+    height:450px;
+    border:2px solid blue;
+}
+
+.alcim{
+    font-size:25px;
+    text-align: center;
+}
+
+.services-container2{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.services-collum2{
+    margin:20px;
+    width:350px;
+    height:500px;
+    border:2px solid blue;
+}
