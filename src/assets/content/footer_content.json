@@ -1,0 +1,20 @@
+{
+ "leftLinks":[
+                {"link":"/PrivacyPolicy","label":"Privacy policy (Adatvédelmi tájékoztató)"},
+                {"link":"/SiteMap",      "label":"Site map"} 
+             ],
+
+
+"adress":"1075 Budapest Madach Imre str. 13-14. Hungary",
+"email":  "Email: hello@iseeq.hu",
+
+"rightLinks":[
+                {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium.svg",      "alt":"recruiment medium link"},
+                {"link":"https://www.facebook.com/IseeQ.co",       "ikon":"/assets/pictures/ikon/facebook.svg",    "alt":"iseeq facebook link"},
+                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram.svg",   "alt":"headhunting instagram link"},
+                {"link":"https://www.linkedin.com/company/iseeq/", "ikon":"/assets/pictures/ikon/linkedin.svg",    "alt":"team building linkedin link"}
+             ]             
+    
+
+
+}

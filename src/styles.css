@@ -2,29 +2,6 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-<<<<<<< HEAD
-body{
-    margin:0px;
-    background-color:white;
-}
-
-.site-title{
-    -webkit-margin-before:0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size:21px;
-    color:#343399;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-}
-
-/*Press Start 2P
-font-family: 'Press Start 2P', cursive;
-*/
-=======
 @font-face {
     font-family:'bitbold';
     src: url('./assets/fonts/bitbold-webfont.woff') format('woff'),
@@ -66,4 +43,15 @@ body{
 a{
     text-decoration: none;
 }
->>>>>>> f2dc8a6dac6005b269889274eba3019ece2393a5
+.site-base{
+    min-height: 800px;
+    border:1px solid black;
+}
+.site-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:21px;
+    color:#343399;
+    font-family: 'bitbold', cursive;
+    text-align: center;
+}

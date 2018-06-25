@@ -1,18 +1,5 @@
 
-Footer-be linkeket beillesztei felirattal !!!!!
-
-
-
-Game Faeature
 HomeComponent NAvigáljon a Game Featurre
-PrivacyPolicy => Faeature alapra
-PageNotFound == SiteMap egyiket törölni /SITEMAP marad/
-
-
-Oldaltartalmak JSON-be 
-
-
-
 
 
 Nice  To Have:
@@ -53,4 +40,29 @@ lang atribute to the page
 @font-face {
     font-family: myFirstFont;
     src: url(sansation_light.woff);
+}
+
+
+<span>iseeq-home works!</span>
+<h2>Madách Imre</h2>
+<h3>sdfsdfsdfdsfdfsd</h3>
+<h4>Ravetzky Richárd</h4>
+
+
+
+span{
+    font-family: 'bitbold'
+}
+
+h2{
+    font-family: 'brandonbld',Helvetica,Arial,sans-serif;
+    
+}
+
+h3{
+    font-family: 'opensans'
+}
+
+h4{
+    font-family: 'opensansbld'
 }
