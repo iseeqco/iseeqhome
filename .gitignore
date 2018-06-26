@@ -12,7 +12,7 @@
 /functions/node_modules
 
 #Pictures
-/assets/pictures/logo
+/src/assets/pictures
 
 # IDEs and editors
 /.idea

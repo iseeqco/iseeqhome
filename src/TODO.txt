@@ -1,12 +1,12 @@
 
-Footer-be linkeket beillesztei felirattal !!!!!
 
 
+lang atribute to the page
 
 Game Faeature
 HomeComponent NAvigáljon a Game Featurre
-PrivacyPolicy => Faeature alapra
-PageNotFound == SiteMap egyiket törölni /SITEMAP marad/
+
+
 
 
 Oldaltartalmak JSON-be 
@@ -54,3 +54,8 @@ lang atribute to the page
     font-family: myFirstFont;
     src: url(sansation_light.woff);
 }
+
+
+
+https://medium.com/@prashantramnyc/how-to-build-a-simple-sprite-animation-in-javascript-b764644244aa
+http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/
