@@ -43,3 +43,15 @@ body{
 a{
     text-decoration: none;
 }
+.site-base{
+    min-height: 800px;
+    border:1px solid black;
+}
+.site-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:21px;
+    color:#343399;
+    font-family: 'bitbold', cursive;
+    text-align: center;
+}

@@ -13,6 +13,7 @@ Oldaltartalmak JSON-be
 
 
 
+HomeComponent NAvigáljon a Game Featurre
 
 
 Nice  To Have:
@@ -59,3 +60,26 @@ lang atribute to the page
 
 https://medium.com/@prashantramnyc/how-to-build-a-simple-sprite-animation-in-javascript-b764644244aa
 http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/
+<span>iseeq-home works!</span>
+<h2>Madách Imre</h2>
+<h3>sdfsdfsdfdsfdfsd</h3>
+<h4>Ravetzky Richárd</h4>
+
+
+
+span{
+    font-family: 'bitbold'
+}
+
+h2{
+    font-family: 'brandonbld',Helvetica,Arial,sans-serif;
+    
+}
+
+h3{
+    font-family: 'opensans'
+}
+
+h4{
+    font-family: 'opensansbld'
+}

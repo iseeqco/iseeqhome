@@ -24,6 +24,7 @@ export const routes: Routes =[
   {path: 'SiteMap',component:IseeqSitemapComponent},
   {path: 'PrivacyPolicy',component:IseeqPrivacypolicyComponent},
   {path: 'home',component:IseeqHomeComponent},
+  {path: 'game',loadChildren:'./GameFeature/game.module#GameModule'},
   {path: 'home/:site', loadChildren: './ContetntFeature/iseeq-contetn.module#IseeqContetnModule'},
   {path: '', redirectTo:'home',pathMatch:'full'},
   {path: '**', component:IseeqHomeComponent}
