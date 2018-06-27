@@ -30,7 +30,7 @@ getFooterContent(){
 getPrivacyPolicy(language:string){
     let url:string="./assets/content/privacypolicy/";
     let file:string
-    if(language=='HU'){file='hu.html'} else {file='eng.html'}
+    if(language=='Magyar'){file='hu.html'} else {file='eng.html'}
     let response=this.http.get(url+file,{ responseType: 'text' });
     return response;
 }

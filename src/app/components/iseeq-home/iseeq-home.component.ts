@@ -18,15 +18,15 @@ export class IseeqHomeComponent{
     }
 
 @ViewChild('cat')
-    private catElement:ElementRef;
+  private catElement:ElementRef;
 @ViewChild('dog')
-    private dogElement:ElementRef;
+  private dogElement:ElementRef;
 @ViewChild('coin')
-    private coinElement:ElementRef;
+  private coinElement:ElementRef;
 @ViewChild('coin2')
-    private coin2Element:ElementRef;
+  private coin2Element:ElementRef;
 @ViewChild('coin3')
-    private coin3Element:ElementRef;
+  private coin3Element:ElementRef;
 
   constructor(
     private router:Router,
@@ -39,10 +39,11 @@ export class IseeqHomeComponent{
  ngOnInit(){
    for(let i=0;i<this.navService.componentRemote.length;i++){this.navService.componentRemote[i]=false}
    this.navService.areSitesOpen=false;
-  
   }
 
  
+//A nav servise be felvenni egy valtozot ami a kikapcsolast intezi. OnInit bekapcsolja az animaciot derstroy ki de ezt a setInjtervall-ba kell a 
+//service valtozo alapjan megvalositani.
 
 spriteAnimation(picture:ElementRef,unit,limit:number,intervall:number,repeat ? :number):void{
   let counter:number = 0;

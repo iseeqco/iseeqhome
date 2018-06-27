@@ -18,7 +18,7 @@ export class IseeqPrivacypolicyComponent implements OnInit {
               language:string;
   
   constructor(private httpService:IseeqHttpService) {
-      this.language='HU';
+      this.language='English';
    }
 
   ngOnInit() {
@@ -32,7 +32,6 @@ export class IseeqPrivacypolicyComponent implements OnInit {
   getContetntByLanguage(lang:string){
     this.httpService.getPrivacyPolicy(lang).subscribe(data=>{
                 this.siteContent=data;
-                console.log(this.siteContent)
                 this.elRef.nativeElement.innerHTML=this.siteContent
             })
   }
