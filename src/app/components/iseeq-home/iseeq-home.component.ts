@@ -14,6 +14,7 @@ export class IseeqHomeComponent{
       if ((window.innerHeight + window.scrollY) >= this.element.nativeElement.firstElementChild.offsetHeight) {
          this.navService.sitePositionDatas=[];
          this.router.navigate(['/home/services'])
+         this.navService.stopAnimation=true;
         }
     }
 
@@ -36,47 +37,32 @@ export class IseeqHomeComponent{
   {
    
   }
- ngOnInit(){
-   for(let i=0;i<this.navService.componentRemote.length;i++){this.navService.componentRemote[i]=false}
-   this.navService.areSitesOpen=false;
+  ngOnInit(){
+    for(let i=0;i<this.navService.componentRemote.length;i++){this.navService.componentRemote[i]=false}
+    this.navService.areSitesOpen=false;
+    
+  }
+  ngAfterContentInit(){
+    this.startAnimation()
+    this.navService.stopAnimation=false;
   }
 
- 
-//A nav servise be felvenni egy valtozot ami a kikapcsolast intezi. OnInit bekapcsolja az animaciot derstroy ki de ezt a setInjtervall-ba kell a 
-//service valtozo alapjan megvalositani.
-
-spriteAnimation(picture:ElementRef,unit,limit:number,intervall:number,repeat ? :number):void{
-  let counter:number = 0;
-  let aktuelPosition = unit;
-
-  let InterV = setInterval(()=>{
-   
-  picture.nativeElement.style.backgroundPosition=`-${aktuelPosition}px 0px`
-
-  if (aktuelPosition < limit){aktuelPosition=aktuelPosition+unit} else {aktuelPosition=0}
-  counter ++
-  console.log(counter)
-  if(counter==repeat){clearInterval(InterV);console.log("clear")}
-
-},intervall)
-  
-}  
-animateCat():void{
-  this.spriteAnimation(this.catElement,45,45,500,60)
-  this.spriteAnimation(this.dogElement,45,45,500,60)
-  this.spriteAnimation(this.coinElement,20,40,230,120)
-  this.spriteAnimation(this.coin2Element,20,40,210,120)
-  this.spriteAnimation(this.coin3Element,20,40,250,120)
-
-  //this.catElement.nativeElement.style.backgroundPosition="-45px 0px"
-  
-  
+  spriteAnimation(picture:ElementRef,unit,limit:number,intervall:number,repeat ? :number):void{
+      let counter:number = 0;
+      let aktuelPosition = unit;
+      let InterV = setInterval(()=>{
+      picture.nativeElement.style.backgroundPosition=`-${aktuelPosition}px 0px`
+      if (aktuelPosition < limit){aktuelPosition=aktuelPosition+unit} else {aktuelPosition=0}
+      counter ++
+      if(this.navService.stopAnimation){clearInterval(InterV)}
+      },intervall)
+  }  
+  startAnimation():void{
+    this.spriteAnimation(this.catElement,45,45,500)
+    this.spriteAnimation(this.dogElement,45,45,500)
+    this.spriteAnimation(this.coinElement,20,40,180)
+    this.spriteAnimation(this.coin2Element,20,40,160)
+    this.spriteAnimation(this.coin3Element,20,40,200)
+  }
 }
-animateCatBack(){
-  //this.spriteAnimation(this.catElement,45,45)
- // this.spriteAnimation(this.dogElement,45,45)
-  //console.log("back")
-  //this.catElement.nativeElement.style.backgroundPosition="0px 0px"
-}
-
-}
+ /*Háttérkép KB méret optimalizálás ;   0/1 feliratok; start game or scroll felirat; mobil nézet;*/

@@ -33,6 +33,11 @@
     src: url('./assets/fonts/opensans-bold-webfont.woff') format('woff'),
          url('./assets/fonts/opensans-bold-webfont.woff2') format('woff2');
 }
+@font-face {
+    font-family:'pressstart2p';
+    src: url('./assets/fonts/pressstart2p-regular-webfont.woff') format('woff'),
+         url('./assets/fonts/pressstart2p-regular-webfont.woff2') format('woff2');
+}
 
 body{
     margin:0px;
@@ -50,7 +55,7 @@ a{
 .site-title{
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size:21px;
+    font-size:25px;
     color:#343399;
     font-family: 'bitbold', cursive;
     text-align: center;

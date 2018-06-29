@@ -83,3 +83,9 @@ h3{
 h4{
     font-family: 'opensansbld'
 }
+
+
+
+https://alligator.io/angular/animating-route-changes/
+https://angularfirebase.com/snippets/router-transition-animations-with-angular-4/
+http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-example

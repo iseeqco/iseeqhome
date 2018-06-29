@@ -17,6 +17,7 @@ export class IseeqNavigationService{
         $isContentLoaded :BehaviorSubject<boolean>;
         sitePositionDatas:SitePositionData[];        
         areSitesOpen:boolean;
+        stopAnimation:boolean;
 
     constructor(private iseeqHttp : IseeqHttpService){
         this.menuItemsObs=this.iseeqHttp.getMenuItems();
@@ -29,6 +30,7 @@ export class IseeqNavigationService{
         this.$isContentLoaded=new BehaviorSubject(false)
         this.sitePositionDatas=[];
         this.areSitesOpen=false;
+        this.stopAnimation=false;
         
     }
 
