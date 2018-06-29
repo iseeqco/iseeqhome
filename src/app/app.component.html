@@ -1,3 +1,7 @@
 <app-iseeq-menu></app-iseeq-menu>
-<router-outlet></router-outlet>
+
+<div class="router-anim" [class.router-anim-io]="animate">
+    <router-outlet></router-outlet>
+</div>
+
 <app-iseeq-footer [style.visibility]="!appNavService.areSitesOpen ? 'hidden' : 'visible'" ></app-iseeq-footer>

@@ -15,6 +15,7 @@ export class IseeqNavigationService{
         componentRemote:boolean[];
         loadedContentCounter:number;
         $isContentLoaded :BehaviorSubject<boolean>;
+        $animationTirgger:BehaviorSubject<boolean>
         sitePositionDatas:SitePositionData[];        
         areSitesOpen:boolean;
         stopAnimation:boolean;
@@ -27,7 +28,8 @@ export class IseeqNavigationService{
                                         });
         this.componentRemote=[];
         this.loadedContentCounter=0;
-        this.$isContentLoaded=new BehaviorSubject(false)
+        this.$isContentLoaded= new BehaviorSubject(false);
+        this.$animationTirgger= new BehaviorSubject(false);                                    
         this.sitePositionDatas=[];
         this.areSitesOpen=false;
         this.stopAnimation=false;
@@ -45,6 +47,7 @@ export class IseeqNavigationService{
     }
 
     public openOneSite(siteName:string){
+       this.setAnimationTrigger(false)  
        for(let i=0;i<this.menuItemsArr.length;i++){
             if (this.menuItemsArr[i].menuItem.toLowerCase()==siteName){
                 this.componentRemote[i]=true;
@@ -54,6 +57,7 @@ export class IseeqNavigationService{
     } 
 
     public openAllSite() :void {
+        this.setAnimationTrigger(true);
         this.sitePositionDatas=[];                        
         this.loadedContentCounter=0;
         for(let i=0;i<this.componentRemote.length;i++){ 
@@ -81,5 +85,8 @@ export class IseeqNavigationService{
             }    
         }
     }
- 
+    
+    setAnimationTrigger(value:boolean): void {
+        this.$animationTirgger.next(value);
+    }
 }
