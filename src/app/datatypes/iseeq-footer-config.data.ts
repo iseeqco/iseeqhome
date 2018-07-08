@@ -1,4 +1,4 @@
-export class RightLink{
+export class SocialMediaLink{
     link:string;
     ikon:string;
     alt: string;
@@ -13,5 +13,5 @@ export class IseeqFooterConfigData {
     adress: String;
     email:  String;
     leftLinks:  LeftLink[];
-    rightLinks: RightLink[];            
+    rightLinks: SocialMediaLink[];            
 }

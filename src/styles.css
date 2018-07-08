@@ -10,8 +10,12 @@
 
 @font-face {
     font-family:'bitbold';
-    src: url('./assets/fonts/bitbold-webfont.woff') format('woff'),
-         url('./assets/fonts/bitbold-webfont.woff2') format('woff2');
+    src: url('./assets/fonts/bitbold-webfont.eot');
+    src: url('./assets/fonts/bitbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/bitbold-webfont.woff') format('woff'),
+         url('./assets/fonts/bitbold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/bitbold-webfont.svg#svgFontName') format('svg');
+         font-weight: 900;
 }
 @font-face {
     font-family:'brandon';
@@ -49,14 +53,17 @@ a{
     text-decoration: none;
 }
 .site-base{
-    min-height: 800px;
+    height: 1000px;
     border:1px solid black;
+    overflow: hidden;
+   
 }
 .site-title{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     font-size:25px;
     color:#343399;
-    font-family: 'bitbold', cursive;
+    font-family: "bitbold",Helvetica,Arial,sans-serif;
     text-align: center;
 }
+

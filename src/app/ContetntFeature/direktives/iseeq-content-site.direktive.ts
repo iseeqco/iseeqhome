@@ -1,4 +1,4 @@
-import { Directive, Input} from '@angular/core';
+import { Directive, Input, ViewChild} from '@angular/core';
 import { Component} from '@angular/core';
 import { HostListener } from "@angular/core";
 import { ElementRef } from "@angular/core";
@@ -24,7 +24,7 @@ export class IseeqContentSiteDirective {
     onWheelFirefox(event:any){
       this.router.navigate([this.scrollNavigationParam])
     }
-                
+ 
   constructor(
     private thisElement:ElementRef,
     private navServive:IseeqNavigationService,
@@ -33,11 +33,12 @@ export class IseeqContentSiteDirective {
   { 
    
   }
-  
   ngAfterViewInit() {
     let position:number = this.thisElement.nativeElement.offsetTop
     if(this.isFirstSite){position = 30}
     this.navServive.contentLoadObserver(position,this.scrollNavigationParam);
   }
+
+
 
 }

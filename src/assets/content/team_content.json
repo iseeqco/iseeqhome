@@ -1,0 +1,25 @@
+{
+"teamMembers":
+    [
+        {
+            "profilePicture":"/assets/animation/cloud.png",
+            "name":"Kiskutya",
+            "position":"FEjlesztő",
+            "contacts":
+            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium.svg",      "alt":"recruiment medium link"},
+                {"link":"https://www.facebook.com/IseeQ.co",       "ikon":"/assets/pictures/ikon/facebook.svg",    "alt":"iseeq facebook link"},
+                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram.svg",   "alt":"headhunting instagram link"}
+            ]
+        },
+        {
+            "profilePicture":"/assets/animation/cat.png",
+            "name":"Kismacska",
+            "position":"FEjlesztő",
+            "contacts":
+            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium.svg",      "alt":"recruiment medium link"},
+                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram.svg",   "alt":"headhunting instagram link"}
+            ]
+        }
+
+    ]
+}

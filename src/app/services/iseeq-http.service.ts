@@ -5,6 +5,7 @@ import {HttpClient} from '@angular/common/http';
 
 import {NavigationData } from '../datatypes/iseeq-navigation.data';
 import { IseeqFooterConfigData } from "src/app/datatypes/iseeq-footer-config.data";
+import { TeamMembers } from '../datatypes/iseeq-team-member';
 
 @Injectable()
 export class IseeqHttpService{
@@ -32,6 +33,13 @@ getPrivacyPolicy(language:string){
     let file:string
     if(language=='Magyar'){file='hu.html'} else {file='eng.html'}
     let response=this.http.get(url+file,{ responseType: 'text' });
+    return response;
+}
+
+getTeamMemberes(){
+    let url:string="./assets/content/";
+    let file:string="team_content.json";
+    let response=this.http.get<TeamMembers>(url+file);
     return response;
 }
 

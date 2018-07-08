@@ -60,29 +60,3 @@ export class IseeqBaseContentComponent implements OnInit {
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
-/*  
-@HostListener('touchmove',['$event'])
-onMove(event:any){
- 
-
-}
-
-    
-@HostListener('window:mousedown',['$event.target'])
-mouseDown(target){
-  if(target.tagName=="HTML"){
-  // this.navService.openAllSite();
- }
-}
-*/

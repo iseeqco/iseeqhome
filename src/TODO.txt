@@ -1,20 +1,8 @@
 
-
+site direktivabol a timeout ot kiszedni es http keresek subscribe -janak a vegere tenni a pozicio atadast ha mar minden oldalon kesz a tartalom.
 
 lang atribute to the page
-
 Game Faeature
-HomeComponent NAvigáljon a Game Featurre
-
-
-
-
-Oldaltartalmak JSON-be 
-
-
-
-HomeComponent NAvigáljon a Game Featurre
-
 
 Nice  To Have:
    -- a remoteComponent tombot a navigation data-ba integrálni
@@ -23,7 +11,7 @@ Nice  To Have:
     ---képeket takaritani ami nem kell
    
 
-lang atribute to the page
+
 
 
 
@@ -89,3 +77,13 @@ h4{
 https://alligator.io/angular/animating-route-changes/
 https://angularfirebase.com/snippets/router-transition-animations-with-angular-4/
 http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-example
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=Iducm-RNKvA

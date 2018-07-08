@@ -1,0 +1,27 @@
+<div class="base-card" (mouseenter)="onmouseenter()" (mouseleave)="onMouseLeave()">
+    <div [class]="animTrigger">
+        <div class="card-top1"></div>
+        <div class="card-top2"></div>
+        <div class="card-border"> 
+            <div class="white-corner-left"></div>
+            <div class="white-corner-right"></div>
+            <div class="card-background" >
+                
+                <div [style.visibility]="frontContentVisibility" class="front-content">
+                    <img  [src]=teamMember.profilePicture>
+                </div>
+
+                <div [style.visibility]="backContentVisibility"class="back-content" >
+                    <p>{{teamMember.name}}</p>
+                    <p>{{teamMember.position}}</p>
+                    <a *ngFor="let contact of teamMember.contacts">
+                        <img [src]=contact.ikon width="20" height="20" fill="white">
+                    </a>
+
+                </div>
+            
+            </div>
+        </div>
+        <div class="bord-bottom"></div>
+    </div>
+</div>

@@ -1,23 +1,27 @@
-<div class="site-base">
-    <h2 class="site-title">TEAM</h2>
+<div #siteBase class="site-base" (mouseenter)="onmouseenter()" (mouseleave)="onMouseLeave()">
+    <h1 class="site-title">TEAM</h1>
 
+    <div class="card-container">
 
-<div class="card-border">
+        <flip-card-component *ngFor="let teamMember of teamMembers" [teamMember]="teamMember"  ></flip-card-component>
 
-<div class="white-corner-left"></div>
-<div class="white-corner-right"></div>
-
-<div class="card-background"></div>
-
-</div>
-
-<div class="bord-bottom"></div>
-
-
-
-
-
-
-
+                                <!--BLANK CARD-->
+        <div class="base-card">
+           <div class="card-top1"></div>
+            <div class="card-top2"></div>
+            <div class="card-border"> 
+                <div class="white-corner-left"></div>
+                <div class="white-corner-right"></div>
+                <div class="card-background" style="background-color: white" >
+                    <div class="blank-card">
+                        <h3>JOIN OUR TEAM!</h3>
+                        <p>info@iseeq.co</p>         
+                     </div>
+                </div>
+            </div>
+            <div class="bord-bottom"></div>
+        </div>
+                                <!--*******-->
+    </div>
 
 </div>

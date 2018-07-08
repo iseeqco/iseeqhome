@@ -1,0 +1,44 @@
+@keyframes rotate {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+}
+
+@keyframes rotateback {
+    from {transform: rotateY(180deg);}
+    to {transform: rotateY(0deg);}
+}
+.card{
+    height:430px;
+    width:260px;
+} 
+  
+.card_on{
+    height:430px;
+    width:260px;
+    animation-name: rotate;
+    animation-duration: 1s;
+    transform: rotateY(180deg);
+}
+
+.card_off{
+    height:430px;
+    width:260px;
+    animation-name: rotateback;
+    animation-duration: 1s;
+}
+.front-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:430px;
+}
+.back-content{
+    position: absolute;
+    top:100px;
+    right:0px;
+    transform: rotateY(180deg);
+    width:100%;
+    text-align: center;
+    border:1px solid black;
+}
+
