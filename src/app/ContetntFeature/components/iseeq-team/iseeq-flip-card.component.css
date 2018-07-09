@@ -39,6 +39,37 @@
     transform: rotateY(180deg);
     width:100%;
     text-align: center;
-    border:1px solid black;
 }
 
+.ikon-container{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+}
+.ikon{
+    background-color: #319662;
+    cursor: pointer;
+    margin-right:10px;
+    width:35px;
+    height:30px;
+    padding-top:2px;
+}
+
+.ikon:hover{
+    box-shadow: 3px 3px darkgreen;
+    -ms-transform: translate(-3px,-3px);
+    -webkit-transform: translate(-3px,-3px);
+    transform: translate(-3px,-3px);
+}
+
+.ikon-img{
+    margin:5px;
+}
+
+.member-name{
+
+}
+
+.member-position{
+    
+}

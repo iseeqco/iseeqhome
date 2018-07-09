@@ -8,16 +8,20 @@
             <div class="card-background" >
                 
                 <div [style.visibility]="frontContentVisibility" class="front-content">
-                    <img  [src]=teamMember.profilePicture>
+                    <img  [src]=teamMember.profilePicture [alt]=teamMember.pictureAlt>
                 </div>
 
                 <div [style.visibility]="backContentVisibility"class="back-content" >
-                    <p>{{teamMember.name}}</p>
-                    <p>{{teamMember.position}}</p>
-                    <a *ngFor="let contact of teamMember.contacts">
-                        <img [src]=contact.ikon width="20" height="20" fill="white">
-                    </a>
+                    <p class="member-name">{{teamMember.name}}</p>
+                    <p class="member-position">{{teamMember.position}}</p>
 
+                    <div class="ikon-container">
+                    <div class="ikon" *ngFor="let contact of teamMember.contacts">
+                        <a [href]=contact.link>
+                          <img class="ikon-img" [src]=contact.ikon width="20" height="20" [alt]=contact.alt>
+                        </a>
+                    </div>
+                    </div>    
                 </div>
             
             </div>

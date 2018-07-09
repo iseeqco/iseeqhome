@@ -3,21 +3,23 @@
     [
         {
             "profilePicture":"/assets/animation/cloud.png",
+            "pictureAlt":"akarmilyen felirat a kephez",
             "name":"Kiskutya",
             "position":"FEjlesztő",
             "contacts":
-            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium.svg",      "alt":"recruiment medium link"},
-                {"link":"https://www.facebook.com/IseeQ.co",       "ikon":"/assets/pictures/ikon/facebook.svg",    "alt":"iseeq facebook link"},
-                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram.svg",   "alt":"headhunting instagram link"}
+            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium_card.svg",      "alt":"recruiment medium link"},
+                {"link":"https://www.facebook.com/IseeQ.co",       "ikon":"/assets/pictures/ikon/facebook_card.svg",    "alt":"iseeq facebook link"},
+                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram_card.svg",   "alt":"headhunting instagram link"}
             ]
         },
         {
             "profilePicture":"/assets/animation/cat.png",
+            "pictureAlt":"akarmilyen felirat a kephez",
             "name":"Kismacska",
             "position":"FEjlesztő",
             "contacts":
-            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium.svg",      "alt":"recruiment medium link"},
-                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram.svg",   "alt":"headhunting instagram link"}
+            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium_card.svg",      "alt":"recruiment medium link"},
+                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram_card.svg",   "alt":"headhunting instagram link"}
             ]
         }
 
