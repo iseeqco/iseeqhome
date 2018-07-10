@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef} from '@angular/core';
 import { IseeqHttpService } from '../../../services/iseeq-http.service';
 import { TeamMembers,TeamMember } from '../../../datatypes/iseeq-team-member';
+import { IseeqNavigationService } from '../../../services/iseeq-navigation.service';
 
 @Component({
   selector: 'app-iseeq-team',
@@ -12,22 +13,53 @@ export class IseeqTeamComponent {
   @ViewChild('siteBase') siteBase : ElementRef;
     
     teamMembers:TeamMember[];
+    displayedTeamMembers:TeamMember[];
+    displayedMembersCount:number;
+    previousDisplayedMembersCount:number;
+    maxDisplayedTeamMember:number;
+   
+ 
   
   constructor(
     private http : IseeqHttpService
-  )
-  {}
-
-  ngOnInit(){
-    this.http.getTeamMemberes().subscribe((data:TeamMembers)=>{this.teamMembers=data.teamMembers})
+    )
+  {
+    this.displayedMembersCount=this.setDisplayedMembersCount();
+    this.previousDisplayedMembersCount=this.displayedMembersCount;
   }
 
-  onmouseenter(){
-    this.siteBase.nativeElement.style.height="initial"
+  ngOnInit(){
+    this.http.getTeamMemberes().subscribe((data:TeamMembers)=>{
+            this.teamMembers=data.teamMembers;
+            this.displayedTeamMembers=this.setDisplayedTeamMembers(this.teamMembers.length,this.displayedMembersCount)
+            this.maxDisplayedTeamMember=this.teamMembers.length;
+          })
   }
 
   onMouseLeave(){
-    this.siteBase.nativeElement.style.height="1000px"
+   this.displayedTeamMembers=this.setDisplayedTeamMembers(this.teamMembers.length,this.displayedMembersCount);
+   this.previousDisplayedMembersCount=this.displayedMembersCount;
+  }
+
+  setDisplayedMembersCount(): number {
+    let windowWidth = window.innerWidth;
+    let pice : number;
+    if (windowWidth >= 1200){pice=7}
+    if (windowWidth <  1200){pice=4}
+    if (windowWidth <= 600){pice=1}
+    return pice
+  }
+
+  setDisplayedTeamMembers(teamMembersLength:number,count:number) : TeamMember[]{
+    let displayedTeamMembers: TeamMember[];
+    displayedTeamMembers=this.teamMembers.slice(0,count);
+    return displayedTeamMembers;
+  }
+
+  showMore(){
+    this.previousDisplayedMembersCount=this.previousDisplayedMembersCount+this.displayedMembersCount;
+    if(this.previousDisplayedMembersCount > this.maxDisplayedTeamMember){ this.previousDisplayedMembersCount=this.maxDisplayedTeamMember};
+    this.displayedTeamMembers=this.setDisplayedTeamMembers(0,this.previousDisplayedMembersCount);
   }
 
 }

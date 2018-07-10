@@ -2,24 +2,146 @@
 "teamMembers":
     [
         {
-            "profilePicture":"/assets/animation/cloud.png",
-            "pictureAlt":"akarmilyen felirat a kephez",
-            "name":"Kiskutya",
-            "position":"FEjlesztő",
+            "profilePicture":"/assets/pictures/team/batiz_peti_02-300x396.png",
+            "pictureAlt":"profil picture QUAKE WARRIOR AT ISEEQ",
+            "name":"PETER BATIZ",
+            "position":"QUAKE WARRIOR AT ISEEQ",
             "contacts":
-            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium_card.svg",      "alt":"recruiment medium link"},
-                {"link":"https://www.facebook.com/IseeQ.co",       "ikon":"/assets/pictures/ikon/facebook_card.svg",    "alt":"iseeq facebook link"},
-                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram_card.svg",   "alt":"headhunting instagram link"}
+            [   {"link":"https://beta.d12l.com/", "ikon":"/assets/pictures/ikon/linkedin_card.svg", "alt":"linkedin link"}
+                
             ]
-        },
-        {
-            "profilePicture":"/assets/animation/cat.png",
-            "pictureAlt":"akarmilyen felirat a kephez",
-            "name":"Kismacska",
-            "position":"FEjlesztő",
+        }
+
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
             "contacts":
-            [   {"link":"https://medium.com/@IseeQ",               "ikon":"/assets/pictures/ikon/medium_card.svg",      "alt":"recruiment medium link"},
-                {"link":"https://www.instagram.com/iseeq.co/",     "ikon":"/assets/pictures/ikon/instagram_card.svg",   "alt":"headhunting instagram link"}
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+
+        ,{
+            "profilePicture":"/assets/pictures/team/bb-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CEO",
+            "name":"BALAZS BONDICI",
+            "position":"CO-FOUNDER & CEO",
+            "contacts":
+            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 

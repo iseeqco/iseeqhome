@@ -1,9 +1,9 @@
-<div #siteBase class="site-base" (mouseenter)="onmouseenter()" (mouseleave)="onMouseLeave()">
+<div #siteBase class="site-base-team" (mouseleave)="onMouseLeave()">
     <h1 class="site-title">TEAM</h1>
 
     <div class="card-container">
 
-        <flip-card-component *ngFor="let teamMember of teamMembers" [teamMember]="teamMember"  ></flip-card-component>
+        <flip-card-component *ngFor="let teamMember of displayedTeamMembers" [teamMember]="teamMember"  ></flip-card-component>
 
                                 <!--BLANK CARD-->
         <div class="base-card">
@@ -23,5 +23,6 @@
         </div>
                                 <!--*******-->
     </div>
-
+    <app-iseeq-button (click)="showMore()" text="Show more ..." textcolor="white" background="#45d48b" size="m" shadow="#379d68"></app-iseeq-button>
+    
 </div>

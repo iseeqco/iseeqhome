@@ -14,8 +14,10 @@ import { IseeqNewsComponent } from './components/iseeq-news/iseeq-news.component
 import { IseeqContactComponent } from './components/iseeq-contact/iseeq-contact.component';
 
 import { IseeqFlipCardComponent } from './components/iseeq-team/iseeq-flipcard.component';
+import { IseeqButtonComponent } from '../components/iseeq-button/iseeq-button.component';
 
 import { IseeqContentSiteDirective } from './direktives/iseeq-content-site.direktive';
+
 
 
 
@@ -41,8 +43,13 @@ export const contentRoutes : Routes=[
     IseeqNewsComponent,
     IseeqContactComponent,
     IseeqContentSiteDirective,
-    IseeqFlipCardComponent
+    IseeqFlipCardComponent,
+    IseeqButtonComponent
   ],
+  exports:[
+    IseeqButtonComponent
+  ]
+  ,
   entryComponents:[
     
   ],

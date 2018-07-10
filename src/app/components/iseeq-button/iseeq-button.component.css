@@ -1,0 +1,25 @@
+.button{
+    font-family: 'bitbold', cursive; 
+    border: none;
+    
+}
+
+.s{
+
+}
+
+.m{
+    padding:15px 30px 10px 30px;
+    font-size: 13px;
+}
+
+.l{
+
+}
+
+.button_hower{
+    /* box-shadow: 3px 3px #379d68;*/
+    -ms-transform: translate(-3px,-3px);
+    -webkit-transform: translate(-3px,-3px);
+    transform: translate(-3px,-3px);
+}

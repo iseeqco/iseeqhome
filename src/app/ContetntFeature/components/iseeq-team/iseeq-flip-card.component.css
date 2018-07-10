@@ -32,6 +32,10 @@
     align-items: center;
     height:430px;
 }
+
+.profile-picture{
+    width:220px;
+}
 .back-content{
     position: absolute;
     top:100px;
@@ -67,9 +71,12 @@
 }
 
 .member-name{
-
+    color:white;
+    font-family: "bitbold",Helvetica,Arial,sans-serif;
+    font-size:20px;
 }
 
 .member-position{
-    
+    font-size:15px;
+    color:#319662;
 }
