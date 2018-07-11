@@ -1,5 +1,11 @@
 
-site direktivabol a timeout ot kiszedni es http keresek subscribe -janak a vegere tenni a pozicio atadast ha mar minden oldalon kesz a tartalom.
+TODO:
+    képek a service site ba animáció befejezni
+    team comőponent gomb tunjon el ha mar nnincs több elem
+    testelni mobil nezetben a navigaciot a team komponensnel
+    testelni a csukodasokat mobil nezetben
+
+
 
 lang atribute to the page
 Game Faeature
@@ -7,8 +13,8 @@ Game Faeature
 Nice  To Have:
    -- a remoteComponent tombot a navigation data-ba integrálni
    -- java script browserbe true/false ellenőrzés az index HTML-be.
-
-    ---képeket takaritani ami nem kell
+   -- Json-be tenni a Services site tartalmat
+   
    
 
 
