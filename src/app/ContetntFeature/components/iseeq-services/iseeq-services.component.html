@@ -12,15 +12,17 @@
                     <div class="dekoration" style="position:absolute;bottom:15px;right:15px;"></div>
                 </div>
                 
-                    <p class="services-collum-title">We know<br><span>THE DOMAIN</span></p>
+                    <p class="services-collum-title">We know<br><span class="spans">THE DOMAIN</span></p>
             
-                <div  [@cstate]="collumState" class="services-collum-text">
+                <div  [@cstate]="collumState[0]" class="services-collum-text">
                     <p>We are not only recruiters, but industry experts genuinely interested in the specific domain we are recruiting for. 
-                       We equally understand the language a Node.JS Developer, a CTO or an FMCG Sales Manager speaks, which helps us to find 
-                       the most relevant candidates based on your needs.
+                       We equally understand the language a Node.JS Developer, a CTO or an <span *ngIf="animOpen[0]">FMCG Sales Manager speaks, which helps us to find 
+                       the most relevant candidates based on your needs.</span>
                     </p>
                 </div>
-                <div class="services-collum-button">hgjgfjfghj</div>
+                <div class="services-collum-button">
+                    <app-iseeq-button (click)="animateCollum(0)" [text]=buttonText[0] textcolor="white" background="#343399" size="s" shadow="#2c2b6b"></app-iseeq-button>
+                </div>
             </div>
 
 
@@ -32,15 +34,17 @@
                             <div class="dekoration" style="position:absolute;bottom:15px;right:15px;"></div>
                     </div>
                     
-                        <p class="services-collum-title">We know<br><span>THE MARKET</span></p>
+                        <p class="services-collum-title">We know<br><span class="spans">THE MARKET</span></p>
                 
-                    <div [@cstate]="collumState" class="services-collum-text">
+                    <div [@cstate]="collumState[1]" class="services-collum-text" >
                         <p>As we are working with leading, future-shaping companies, we can keep you up-to-date on industry 
-                            trends. We can also help you match your requirements and expectations to market realities 
-                            for saving time and increasing hiring efficiency.
+                            trends. We can also help you match your requirements and expectations to market <span *ngIf="animOpen[1]">realities 
+                            for saving time and increasing hiring efficiency.</span>
                         </p>
                     </div>
-                    <div class="services-collum-button">hgjgfjfghj</div>
+                    <div class="services-collum-button">
+                        <app-iseeq-button (click)="animateCollum(1)" [text]=buttonText[1] textcolor="white" background="#343399" size="s" shadow="#2c2b6b"></app-iseeq-button>
+                    </div>
             </div>
 
 
@@ -52,16 +56,18 @@
                         <div class="dekoration" style="position:absolute;bottom:15px;right:15px;"></div>
                     </div>
                         
-                        <p class="services-collum-title">We know<br><span>THE PEOPLE</span></p>
+                        <p class="services-collum-title">We know<br><span class="spans">THE PEOPLE</span></p>
                     
-                    <div [@cstate]="collumState" class="services-collum-text">
+                    <div [@cstate]="collumState[2]" class="services-collum-text">
                         <p>We participle at various professional events and organize several ourselves as well. These range from meetups and 
-                            conferences to events that attract thousands of people. Through these events we develop long-term, personal 
+                            conferences to events that attract thousands of people. Through <span *ngIf="animOpen[2]">these events we develop long-term, personal 
                             relationships, resulting in unique network of hidden talent pool, which helps us to reach candidates who are
-                            not on the job market. We never advertise the positions, we only use our own network and referrals through it.
+                            not on the job market. We never advertise the positions, we only use our own network and referrals through it.</span>
                         </p>
                     </div>
-                    <div class="services-collum-button">hgjgfjfghj</div> 
+                    <div class="services-collum-button">
+                        <app-iseeq-button (click)="animateCollum(2)" [text]=buttonText[2] textcolor="white" background="#343399" size="s" shadow="#2c2b6b"></app-iseeq-button>
+                    </div> 
             </div>
 
             

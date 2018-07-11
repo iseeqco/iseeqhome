@@ -42,7 +42,7 @@ b{
     margin-bottom: 0px;
 }
 
-span{
+.spans{
     font-family:'bitbold';
     font-size:25px;
 }
@@ -50,15 +50,15 @@ span{
 .services-collum-text{
     line-height: 200%;
     overflow: hidden;
+    
 }
 
 .services-collum-button{
     position: relative;
     bottom: 10px;
-    text-align: center;
     width:100%;
     opacity: 0.9;
-    padding-top:10px;
+    padding-top:20px;
     box-shadow: 0px -10px 20px 0px white;
     background-color: white;
 

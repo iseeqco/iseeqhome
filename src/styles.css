@@ -3,9 +3,10 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @font-face {
-    font-family:'bitbold';
+    font-family:'bitbold2';
     src: url('./assets/fonts/bitbold-webfont.woff') format('woff'),
          url('./assets/fonts/bitbold-webfont.woff2') format('woff2');
+         font-weight:100;
 }
 
 @font-face {
@@ -47,7 +48,7 @@ body{
     margin:0px;
     background-color:white;
     font-family:'opensans';
-    color:#1b2e24;
+    color:#252b28;
     font-size:16px;
    
 }

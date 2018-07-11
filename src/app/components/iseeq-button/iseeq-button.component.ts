@@ -31,7 +31,6 @@ export class IseeqButtonComponent implements OnInit {
 
   
   ngOnInit() {
-    console.log(this.textcolor)
     this.renderer.setStyle(this.el.nativeElement,'color',this.textcolor);
     this.renderer.setStyle(this.el.nativeElement,'background-color',this.background);
     this.renderer.addClass(this.el.nativeElement,this.size);
