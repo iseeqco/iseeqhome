@@ -15,8 +15,10 @@ import { IseeqContactComponent } from './components/iseeq-contact/iseeq-contact.
 
 import { IseeqFlipCardComponent } from './components/iseeq-team/iseeq-flipcard.component';
 import { IseeqButtonComponent } from '../components/iseeq-button/iseeq-button.component';
+import { IseeqProjektorComponent } from '../components/iseeq-projektor/iseeq-projektor.component';
 
 import { IseeqContentSiteDirective } from './direktives/iseeq-content-site.direktive';
+
 
 
 
@@ -32,7 +34,8 @@ export const contentRoutes : Routes=[
   imports: [
     CommonModule,
     RouterModule.forChild(contentRoutes),
-    IseeqContentMaterialModule
+    IseeqContentMaterialModule,
+
   ],
   declarations: [
     IseeqServicesComponent,
@@ -44,7 +47,8 @@ export const contentRoutes : Routes=[
     IseeqContactComponent,
     IseeqContentSiteDirective,
     IseeqFlipCardComponent,
-    IseeqButtonComponent
+    IseeqButtonComponent,
+    IseeqProjektorComponent,
   ],
   exports:[
     IseeqButtonComponent

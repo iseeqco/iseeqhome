@@ -25,123 +25,127 @@
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/pomi_02-300x396.png",
+            "pictureAlt":"profile picture HIGH FLY SOURCING NINJA A.K.A. GEEK'S BEST FRIEND AT ISEEQ",
+            "name":"Tamas Puski",
+            "position":"HIGH FLY SOURCING NINJA A.K.A. GEEK'S BEST FRIEND AT ISEEQ",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   {"link":"https://twitter.com/TPuski",     "ikon":"/assets/pictures/ikon/twitter_card.svg",      "alt":"twitter link"},
+                {"link":"https://www.facebook.com/puskit1", "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/puskitamas/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/k_peti-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & KNOWS EVERYONE",
+            "name":"Peter Kovacs",
+            "position":"CO-FOUNDER & KNOWS EVERYONE",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   {"link":"https://twitter.com/kowaxisee",     "ikon":"/assets/pictures/ikon/twitter_card.svg",      "alt":"twitter link"},
+                {"link":"https://www.facebook.com/kowaxisee",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/kovacspeterjr/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/dori_02-300x396-1.png",
+            "pictureAlt":"profile picture COMMUNITY MUSE @TECH TEAM",
+            "name":"Dora Nemeth",
+            "position":"COMMUNITY MUSE @TECH TEAM",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [  
+                {"link":"https://www.linkedin.com/in/dorinemeth/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/tomi_02-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & CHIEF BUSINESS EVANGELIST",
+            "name":"Tamas Nemeth",
+            "position":"CO-FOUNDER & CHIEF BUSINESS EVANGELIST",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   
+                {"link":"https://www.linkedin.com/in/tamasnemeth/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            ]
+        }
+       
+        ,{
+            "profilePicture":"/assets/pictures/team/moni-300x396.png",
+            "pictureAlt":"profile picture GAMESHAKER",
+            "name":"Moni Horvath",
+            "position":"GAMESHAKER",
+            "contacts":
+            [    {"link":"https://www.linkedin.com/in/monikahorvath/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+                 
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/andi_02-300x396.png",
+            "pictureAlt":"profile picture OFFICE PIXIE",
+            "name":"Andrea Boros",
+            "position":"OFFICE PIXIE",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   {"link":"https://www.facebook.com/andrea.boros.509", "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/borosandrea/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/gergo_02-300x396.png",
+            "pictureAlt":"profile picture FLYING SOURCER",
+            "name":"Gabor Antal",
+            "position":"FLYING SOURCER",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   {"link":"https://twitter.com/antalgabor",     "ikon":"/assets/pictures/ikon/twitter_card.svg",      "alt":"twitter link"},
+                {"link":"https://www.facebook.com/antalgabor",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/gaborantal/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/koalas_gyerek_02-300x396.png",
+            "pictureAlt":"profile picture SEEKER OF DAL SEGNO",
+            "name":"Gergo Hasko",
+            "position":"SEEKER OF DAL SEGNO",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   {"link":"https://medium.com/@gergo.hasko/",     "ikon":"/assets/pictures/ikon/github_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/gerihasko/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/profilkép_Kiss_Gergely_PNG_kritikusanapró-300x564.png",
+            "pictureAlt":"profile picture 404 AT ISEEQ",
+            "name":"Kiss Gergely",
+            "position":"404 AT ISEEQ",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [  
+                {"link":"https://www.linkedin.com/in/gergelykissiseeq", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/komar_balazs_02-300x396.png",
+            "pictureAlt":"profile picture CO-FOUNDER & SOCIAL GEEKOLOGIST",
+            "name":"Balazs Komar",
+            "position":"CO-FOUNDER & SOCIAL GEEKOLOGIST",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   {"link":"https://twitter.com/Bazsux","ikon":"/assets/pictures/ikon/twitter_card.svg",      "alt":"twitter link"},
+                {"link":"https://www.facebook.com/balazs.komar","ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
+                {"link":"https://www.linkedin.com/in/balazskomar/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 
         ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
+            "profilePicture":"/assets/pictures/team/agi_02-300x396.png",
+            "pictureAlt":"profile picture SCOUT BROWNIE OF TECH TEAM & CURRENTLY @ HOME WITH BABY",
+            "name":"Agi Hank",
+            "position":"SCOUT BROWNIE OF TECH TEAM & CURRENTLY @ HOME WITH BABY",
             "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
-            ]
-        }
-
-        ,{
-            "profilePicture":"/assets/pictures/team/bb-300x396.png",
-            "pictureAlt":"profile picture CO-FOUNDER & CEO",
-            "name":"BALAZS BONDICI",
-            "position":"CO-FOUNDER & CEO",
-            "contacts":
-            [   {"link":"https://www.facebook.com/bondici",     "ikon":"/assets/pictures/ikon/facebook_card.svg",      "alt":"facebook link"},
-                {"link":"https://www.linkedin.com/in/bondici/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
+            [   
+                {"link":"https://www.linkedin.com/in/agnes-hank-38868993/", "ikon":"/assets/pictures/ikon/linkedin_card.svg",      "alt":"linkedin link"}
             ]
         }
 

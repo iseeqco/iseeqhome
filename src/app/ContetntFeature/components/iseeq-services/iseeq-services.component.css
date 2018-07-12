@@ -26,6 +26,14 @@ b{
     transition: all .2s ease-in-out;
 }
 
+img{
+    position: relative;
+    left:20px;
+    width:127px;
+    height: 187px;
+    z-index:2;
+}
+
 .services-collum-picture:hover{
     transform: scale(1.2);
 }

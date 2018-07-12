@@ -18,6 +18,7 @@ import { IseeqFooterComponent } from './components/iseeq-footer/iseeq-footer.com
 import { IseeqSitemapComponent } from './components/iseeq-sitemap/iseeq-sitemap.component';
 import { IseeqPrivacypolicyComponent } from './components/iseeq-privacypolicy/iseeq-privacypolicy.component';
 
+
 export const routes: Routes =[
   {path: 'SiteMap',component:IseeqSitemapComponent},
   {path: 'PrivacyPolicy',component:IseeqPrivacypolicyComponent},
