@@ -4,25 +4,26 @@
     <div class="card-container">
 
         <flip-card-component *ngFor="let teamMember of displayedTeamMembers" [teamMember]="teamMember"  ></flip-card-component>
-
-                                <!--BLANK CARD-->
+        
+        <!--BLANK CARD-->
         <div class="base-card">
-           <div class="card-top1"></div>
-            <div class="card-top2"></div>
-            <div class="card-border"> 
-                <div class="white-corner-left"></div>
-                <div class="white-corner-right"></div>
-                <div class="card-background" style="background-color: white" >
-                    <div class="blank-card">
-                        <h3>JOIN OUR TEAM!</h3>
-                        <p>info@iseeq.co</p>         
-                     </div>
-                </div>
+            <div class="card-top1"></div>
+                <div class="card-top2"></div>
+                    <div class="card-border"> 
+                        <div class="white-corner-left"></div>
+                        <div class="white-corner-right"></div>
+                        <div class="card-background" style="background-color: white" >
+                            <div class="blank-card">
+                                <app-iseeq-button *ngIf="existMoreMember" (click)="showMore()" text="More member" textcolor="white" background="#343399" 
+                                                   size="m" shadow="#2c2b6b"> 
+                                </app-iseeq-button>
+                                <h3>JOIN OUR TEAM!</h3>
+                                <p>info@iseeq.co</p>         
+                            </div>
+                        </div>
+                    </div>
+                <div class="bord-bottom"></div>
             </div>
-            <div class="bord-bottom"></div>
-        </div>
-                                <!--*******-->
+        <!--*******-->
     </div>
-    <app-iseeq-button (click)="showMore()" text="Show more ..." textcolor="white" background="#45d48b" size="m" shadow="#379d68"></app-iseeq-button>
-    
 </div>

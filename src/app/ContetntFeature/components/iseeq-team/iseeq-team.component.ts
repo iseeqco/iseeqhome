@@ -17,7 +17,7 @@ export class IseeqTeamComponent {
     displayedMembersCount:number;
     previousDisplayedMembersCount:number;
     maxDisplayedTeamMember:number;
-   
+    existMoreMember:boolean;
  
   
   constructor(
@@ -33,12 +33,14 @@ export class IseeqTeamComponent {
             this.teamMembers=data.teamMembers;
             this.displayedTeamMembers=this.setDisplayedTeamMembers(this.teamMembers.length,this.displayedMembersCount)
             this.maxDisplayedTeamMember=this.teamMembers.length;
+            if(this.maxDisplayedTeamMember > this.displayedTeamMembers.length){this.existMoreMember=true}
           })
   }
 
   onMouseLeave(){
    this.displayedTeamMembers=this.setDisplayedTeamMembers(this.teamMembers.length,this.displayedMembersCount);
    this.previousDisplayedMembersCount=this.displayedMembersCount;
+   if(this.maxDisplayedTeamMember > this.displayedTeamMembers.length){this.existMoreMember=true}
   }
 
   setDisplayedMembersCount(): number {
@@ -60,6 +62,9 @@ export class IseeqTeamComponent {
     this.previousDisplayedMembersCount=this.previousDisplayedMembersCount+this.displayedMembersCount;
     if(this.previousDisplayedMembersCount > this.maxDisplayedTeamMember){ this.previousDisplayedMembersCount=this.maxDisplayedTeamMember};
     this.displayedTeamMembers=this.setDisplayedTeamMembers(0,this.previousDisplayedMembersCount);
+    if(this.maxDisplayedTeamMember == this.displayedTeamMembers.length){
+      this.existMoreMember=false;
+    }
   }
 
 }

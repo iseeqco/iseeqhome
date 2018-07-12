@@ -9,10 +9,11 @@
 
 .blank-card{
     color:#343399;
-    margin-top:150px;
+    margin-top:100px;
 }
 
 h3{
+    margin-top:100px;
     font-family: 'bitbold', cursive;
 }
 
@@ -93,3 +94,5 @@ p{
     box-sizing: border-box; 
 }
 /*--------------------------------------------------------*/
+
+@media only screen and (max-width: 400px) {}

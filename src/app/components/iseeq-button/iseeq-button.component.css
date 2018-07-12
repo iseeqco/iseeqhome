@@ -22,8 +22,7 @@
 }
 
 .button_hower{
-    /* box-shadow: 3px 3px #379d68;*/
-    -ms-transform: translate(-3px,-3px);
+   -ms-transform: translate(-3px,-3px);
     -webkit-transform: translate(-3px,-3px);
     transform: translate(-3px,-3px);
 }

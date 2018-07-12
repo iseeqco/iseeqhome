@@ -112,8 +112,8 @@ a{
         background:url("/assets/pictures/home/mobil_low.jpg");
         background-repeat:no-repeat;
         background-position:center;
-        top:0px;
-        left:50%;
+        top:-30px;
+        left:49%;
         background-size: cover;
     }
     .hatter{

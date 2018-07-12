@@ -2,12 +2,7 @@
 TODO:
     képek a service site ba
     képek linkek a team site ba
-    team component gomb tunjon el ha mar nnincs több elem és legyen középen.
-    mobil nezet hover classok kiváltása (media queri-be kikapcsolni)
-    kezdőképet mobil nézetbe 20-41 pixellel feljeb
-    kárgyák mobil nezete, blank kard-ot kicsire levenni vagy kivenni hogy latszon a többi esetleg a gombot bele tenni.
-
-
+    
 lang atribute to the page
 Game Faeature
 
@@ -17,6 +12,34 @@ Nice  To Have:
    -- Json-be tenni a Services site tartalmat
    
    
+ABOUT
+
+Base:
+    Flag data tomb a 2 szélén fixen ures vagy nem látható tag. (mobil nezetben nincs blank tag a szeleken)
+    3-as megjelenitő amiben tolodnak az adatok (3-as tőmb 3-as div flex box)
+
+
+
+
+Flag component:
+    3 nezettel: fix height fix width -el
+                semmi visible none;
+                kis zaszlo + szöveg
+                nagy zaszlo + szöveg (szöveg magasabba /a div magassaga a zaszlo kephez igazodik/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

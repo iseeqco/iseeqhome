@@ -17,8 +17,10 @@ export class IseeqButtonComponent implements OnInit {
   
   @HostListener('mouseenter')
     onMouseEnter(){
-      this.renderer.addClass(this.el.nativeElement,'button_hower');
-      this.renderer.setStyle(this.el.nativeElement,'box-shadow','3px 3px '+this.shadow)
+      if(window.innerWidth>800){
+        this.renderer.addClass(this.el.nativeElement,'button_hower');
+        this.renderer.setStyle(this.el.nativeElement,'box-shadow','3px 3px '+this.shadow)
+      }
     }
 
   @HostListener('mouseleave')
