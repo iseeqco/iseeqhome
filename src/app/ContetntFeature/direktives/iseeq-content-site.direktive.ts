@@ -1,5 +1,4 @@
-import { Directive, Input, ViewChild} from '@angular/core';
-import { Component} from '@angular/core';
+import { Directive, Input} from '@angular/core';
 import { HostListener } from "@angular/core";
 import { ElementRef } from "@angular/core";
 import { Router} from '@angular/router';

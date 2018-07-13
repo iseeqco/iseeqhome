@@ -1,2 +1,7 @@
-
+.projectable{
+    height:400px;
+    min-width:250px;
+    margin:20px;
+    background-color:blue;
+}
 

@@ -1,17 +1,14 @@
+TODO:    Direktivaba: width,height beallitasa input-bol. (átadható a projektor komponensnek?)
+         White Space-div ek definialasa parameterezese   
 
-TODO:
-    képek a service site ba
-    képek linkek a team site ba
-    
-lang atribute to the page
-Game Faeature
 
-Nice  To Have:
-   -- a remoteComponent tombot a navigation data-ba integrálni
-   -- java script browserbe true/false ellenőrzés az index HTML-be.
-   -- Json-be tenni a Services site tartalmat
-   
-   
+
+        -scroll után igazodjon középre az elem.
+        -klikk-re scroll belövése számított értékkel
+        -megjelenitő ablak paraméterezhető szélesség állítás
+        -alul az ablak elemeinek lista létrehozása (annyi pötty ahány elem van vetítőben)  
+
+
 ABOUT
 
 Base:
@@ -26,21 +23,16 @@ Flag component:
                 semmi visible none;
                 kis zaszlo + szöveg
                 nagy zaszlo + szöveg (szöveg magasabba /a div magassaga a zaszlo kephez igazodik/)
+    
+lang atribute to the page
+Game Faeature
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Nice  To Have:
+   -- a remoteComponent tombot a navigation data-ba integrálni
+   -- java script browserbe true/false ellenőrzés az index HTML-be.
+   -- Json-be tenni a Services site tartalmat
+   
+   
 
 
 
