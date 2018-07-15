@@ -1,23 +1,9 @@
-TODO:    Direktivaba: width,height beallitasa input-bol. (átadható a projektor komponensnek?)
-         White Space-div ek definialasa parameterezese   
-
-
-
-        -scroll után igazodjon középre az elem.
-        -klikk-re scroll belövése számított értékkel
-        -megjelenitő ablak paraméterezhető szélesség állítás
-        -alul az ablak elemeinek lista létrehozása (annyi pötty ahány elem van vetítőben)  
-
+TODO:  
+     -alul az ablak elemeinek lista (szinezodjenek ahogy lépünk rajta)
+     -scrollozás animációval finomít, ne ugráljon az oldal 
+     -gombok beillesztése
 
 ABOUT
-
-Base:
-    Flag data tomb a 2 szélén fixen ures vagy nem látható tag. (mobil nezetben nincs blank tag a szeleken)
-    3-as megjelenitő amiben tolodnak az adatok (3-as tőmb 3-as div flex box)
-
-
-
-
 Flag component:
     3 nezettel: fix height fix width -el
                 semmi visible none;
@@ -28,6 +14,7 @@ lang atribute to the page
 Game Faeature
 
 Nice  To Have:
+   --Mat Ikonok lecserélése !!! nagy tőle a style.css !!!
    -- a remoteComponent tombot a navigation data-ba integrálni
    -- java script browserbe true/false ellenőrzés az index HTML-be.
    -- Json-be tenni a Services site tartalmat
@@ -101,7 +88,7 @@ https://angularfirebase.com/snippets/router-transition-animations-with-angular-4
 http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-example
 
 
-
+https://www.concretepage.com/angular-2/angular-2-4-contentchild-and-contentchildren-example
 
 
 
@@ -109,3 +96,10 @@ http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-ex
 
 
 https://www.youtube.com/watch?v=Iducm-RNKvA
+
+
+
+
+https://www.youtube.com/watch?v=Iducm-RNKvA&t=2089s
+
+

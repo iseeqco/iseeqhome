@@ -1,11 +1,13 @@
-<div #projektorWindow class="projektor-window" draggable="false" ondragstart="return false;">
-
-<div #aboutScrollable class="about-scrollable"draggable="false" ondragstart="return false;">
-
-
-    <ng-content></ng-content>
-  
-
+<div #projektorWindow class="projektor-window" draggable="false" ondragstart="return false;" 
+    (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp()">
+    <div #aboutScrollable class="about-scrollable"draggable="false" ondragstart="return false;" (touchend)="onToucheEnd()">
+        <ng-content></ng-content>
+    </div>
 </div>
 
+<div *ngIf="statusBar" class="status-bar" >
+    <div *ngFor="let member of members; let i = index" class="status-bar-item" [style.background-color]="!isMemberActive[i] ? 'gray':'red'" ></div>
 </div>
+
+<p (click)="stepNavigationScroll(1)" style="color:black;font-size:30px;margin-left:50px;"> elore </p>
+<p (click)="stepNavigationScroll(-1)" style="color:black;font-size:30px;margin-left:50px;"> vissza </p>

@@ -1,8 +1,6 @@
 .projektor-window{
     position:relative;
-    padding: 5px; 
     border:2px solid green;
-    width:50%;
     overflow: hidden; 
 }
 .about-scrollable{
@@ -12,5 +10,17 @@
     border:2px solid red;
     overflow-x:visible;
     cursor:grab;
+}
+.status-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.status-bar-item{
+    width:10px;
+    height: 10px;
+    margin:5px;
+   /* background-color: grey;*/
+    
 }
 

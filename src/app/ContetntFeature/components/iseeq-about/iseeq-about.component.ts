@@ -6,6 +6,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./iseeq-about.component.css']
 })
 export class IseeqAboutComponent{
-
+elementInCenter(event:any){
+  console.log("event catched")
+  console.log(event)
+}
   }
 
