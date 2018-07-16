@@ -25,7 +25,7 @@ export class IseeqProjektorComponent implements OnInit {
         this.renderer2.setStyle(this.projektorWindow.nativeElement,'overflow-x','scroll');
         this.scrollElementToCenter(1);
         if(this.startPosition > 1) {
-          this.projektorWindow.nativeElement.scrollLeft+=this.membersXPositions[this.startPosition-1];
+          this.projektorWindow.nativeElement.scrollLeft+this.membersXPositions[this.startPosition-1];
           this.currentStepNavPos=this.startPosition;
         }
         this.isFirstTouche=false;
