@@ -49,7 +49,7 @@ export class IseeqMenuComponent implements OnInit {
   )
   {
     this.isSMenuOpen='false';
-    this.sMenuIcon='menu'
+    this.sMenuIcon='./assets/pictures/ikon/baseline-menu-24px.svg'
     this.isMenuVisible=false;
   }
 
@@ -62,10 +62,10 @@ export class IseeqMenuComponent implements OnInit {
   openCloseSMenu(){
     if (this.isSMenuOpen=="false")
       {this.isSMenuOpen='true';
-       this.sMenuIcon="close"}
+       this.sMenuIcon="./assets/pictures/ikon/baseline-close-24px.svg"}
     else
       {this.isSMenuOpen="false";
-       this.sMenuIcon="menu"}
+       this.sMenuIcon="./assets/pictures/ikon/baseline-menu-24px.svg"}
   }
  
   private scrollToComponent(component:string) : void {

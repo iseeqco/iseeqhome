@@ -6,8 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IseeqMaterialModule } from './moduls/iseeq-material.module';
-
 import { IseeqHttpService } from './services/iseeq-http.service';
 import { IseeqNavigationService } from './services/iseeq-navigation.service';
 
@@ -42,7 +40,6 @@ export const routes: Routes =[
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    IseeqMaterialModule,
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes)

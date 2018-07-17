@@ -1,7 +1,6 @@
 TODO:  
-     -alul az ablak elemeinek lista (szinezodjenek ahogy lépünk rajta)
-     -scrollozás animációval finomít, ne ugráljon az oldal 
-     -gombok beillesztése
+     -gomb svg beillesztése
+     --Mat Ikonok lecserélése !!! nagy tőle a style.css !!!
 
 ABOUT
 Flag component:
@@ -9,12 +8,16 @@ Flag component:
                 semmi visible none;
                 kis zaszlo + szöveg
                 nagy zaszlo + szöveg (szöveg magasabba /a div magassaga a zaszlo kephez igazodik/)
-    
+CONTACTS:
+    a formok routolodjanak be ami elsore megjelenik az csak egy "blank" kép.    
+
+
+
 lang atribute to the page
 Game Faeature
 
 Nice  To Have:
-   --Mat Ikonok lecserélése !!! nagy tőle a style.css !!!
+   
    -- a remoteComponent tombot a navigation data-ba integrálni
    -- java script browserbe true/false ellenőrzés az index HTML-be.
    -- Json-be tenni a Services site tartalmat
