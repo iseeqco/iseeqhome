@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-iseeq-flag',
@@ -7,32 +7,32 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class IseeqFlagComponent implements OnInit {
     
-    active:boolean;         //configurationen
-    activePicture:string;
-    passivePicture:string;
+@Input('active')  active:boolean;         //configurationen
+@Input('texts')   texts:string[];
+                  activePicture:string;
+                  passivePicture:string;
 
-    visiblePicture:string;  //activated values
-    visibleClass:string;
+                  visiblePicture:string;  //activated values
+    
   
-  constructor(private renderer2:Renderer2) {
-    this.active=false;
+  constructor() {
     this.activePicture="./assets/pictures/about/flag-active.png"
     this.passivePicture="./assets/pictures/about/flag.png"
-
-    
   }
 
   ngOnInit() {
     this.configureView(this.active);
+    console.log(this.active)
+    console.log(this.texts)
   }
 
   private configureView(active:boolean){
     if(this.active){
       this.visiblePicture=this.activePicture;
-      this.visibleClass="active-flag flag"      
+        
     } else if (!this.active){
         this.visiblePicture=this.passivePicture;
-        this.visibleClass="passive-flag flag"
+       
     }
   
   }

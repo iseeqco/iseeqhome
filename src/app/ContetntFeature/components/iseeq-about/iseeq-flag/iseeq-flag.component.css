@@ -1,26 +1,21 @@
-h1{
-    color: black;
-}
-
 .flag-container{
     display:flex;
     width:350px;
-    color:black;
     border:1px solid black;
+    margin:10px;
 }
 
 .flag-img-cont{
-   
-    border:2px solid pink;
+   border:2px solid pink;
 }
 
-.flag-text-con{
-   
+h1{
+    position: relative;
 }
+
 ul{
     list-style-type:none;
     position:relative;
-    top:40px;
     padding:0px;
     
 }
@@ -29,14 +24,12 @@ li{display: flex}
 .list-decorator{
     min-width:7px;
     height: 7px;
-    background-color: lightblue;
-    box-shadow: 1px 2px black;
     display:inline-block;
     margin-top:5px;
     margin-right:5px;
 }
 
-.test{
+.li-text{
     display: inline-block;
 }
 
@@ -45,15 +38,9 @@ li{display: flex}
   border: 1px solid black;
   height:450px;
 }
-.passive-flag{
-   
+
+@media screen and (max-width: 600px) {
+  .flag-container{
+    width:280px;
+  } 
 }
-
-.active-flag{
-   
-    bottom:40px;
-    
-    
-
-}
-

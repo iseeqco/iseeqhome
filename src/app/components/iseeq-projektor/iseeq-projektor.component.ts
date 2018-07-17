@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ViewChild, ElementRef, Renderer2, ContentChildren, QueryList,Input} from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef, Renderer2, ContentChildren, QueryList,Input, Testability} from '@angular/core';
 
 import { IseeqProjektorDirective } from '../../ContetntFeature/direktives/iseeq-projektor.direktive';
 
@@ -10,29 +10,10 @@ import { IseeqProjektorDirective } from '../../ContetntFeature/direktives/iseeq-
 })
 export class IseeqProjektorComponent implements OnInit {
 
- @HostListener('mouseleave',['$event'])
-    onMouseLeave(event){
-      console.log("mouseleave")
+ @HostListener('mouseleave')
+    onMouseLeave(){
       this.removeMouseMoveListener();
       this.sideScrollControll();
-    }
-  
-  @HostListener('touchstart')
-    onToucheStart(){
-      console.log("touche start")
-      if(this.isFirstTouche){
-        console.log("first touche")
-        if(!this.startPosition){
-          console.log("nem start pos")
-          this.renderer2.setStyle(this.projektorWindow.nativeElement,'overflow-x','scroll');
-          this.scrollElementToCenter(0);//1 vol
-        }
-        if(this.startPosition > 1) {
-          this.projektorWindow.nativeElement.scrollLeft+this.membersXPositions[this.startPosition-1];
-          this.currentStepNavPos=this.startPosition;
-        }
-        this.isFirstTouche=false;
-      }
     }
   
   @ViewChild('aboutScrollable')                aboutScrollable : ElementRef;
@@ -57,7 +38,7 @@ export class IseeqProjektorComponent implements OnInit {
                                   //------------------------------------------------------------------------------------
                                                isMemberActive: boolean [];
   
-   constructor(private renderer2 :Renderer2) {
+  constructor(private renderer2 :Renderer2) {
     this.relativeNavValue=0;
     this.membersXPositions=[];
     this.membersWidth=[];
@@ -76,16 +57,34 @@ export class IseeqProjektorComponent implements OnInit {
     if(this.startPosition){this.scrollElementToCenter(this.startPosition)}
     this.members.forEach( () => this.isMemberActive.push(false) );
   }
+  
+  onTouchStart(event){
+    this.aktuellScreenx=event.changedTouches[0].clientX;
+    this.previouseScreenx=this.aktuellScreenx;
+    event.preventDefault()
+  }
+
+  onTouchMove(event){
+    this.aktuellScreenx=event.changedTouches[0].clientX;
+    this.relativeNavValue=this.relativeNavValue+this.previouseScreenx-this.aktuellScreenx;
+    this.previouseScreenx=this.aktuellScreenx;
+    this.renderer2.setStyle(this.aboutScrollable.nativeElement,'left',-this.relativeNavValue+'px');
+    event.preventDefault()
+  }
+
+  onToucheEnd(){
+    this.selectElementForScroll()
+    this.sideScrollControll();
+    event.preventDefault()
+  }
 
   onMouseDown(event){
-    console.log("mouseDOWN")
     this.previouseScreenx=event.screenX;
     this.aktuellScreenx=event.screenX;
     this.mouseMoveListener=this.renderer2.listen(this.aboutScrollable.nativeElement,'mousemove',(event)=>{this.onMouseMove(event)});
   }
 
-  private onMouseMove(event:any) : void {
-    console.log("mouseMOVE")
+  onMouseMove(event:any) : void {
     this.aktuellScreenx=event.screenX;
     this.relativeNavValue=this.relativeNavValue+(this.previouseScreenx-this.aktuellScreenx);
     this.previouseScreenx=this.aktuellScreenx;
@@ -93,20 +92,15 @@ export class IseeqProjektorComponent implements OnInit {
   }
 
   onMouseUp(){
-    console.log("mouseUP")
     this.removeMouseMoveListener();
     this.selectElementForScroll()
     this.sideScrollControll();
   }
 
-  onToucheEnd(){
-    console.log("touche END")
-    this.selectElementForScroll()
-  }
-
   private removeMouseMoveListener() :void {
     if (this.mouseMoveListener){this.mouseMoveListener()}
   }
+
         //@ Nem engedi "tulscrollozni" tárolo div-te.
   private sideScrollControll() : void{
     if(this.isFirstTouche){
@@ -132,7 +126,6 @@ export class IseeqProjektorComponent implements OnInit {
   }
                          //@kiválasztja azt az elemet ami legközelebb van a projektor ablak közepéhez és meghivja az elem sorszámával a középre igazító metódust
   private selectElementForScroll() : void {
-    console.log("select element")
     let counter : number = 0;
     let minposition : number = 0;
     let aktuellValue :number;
@@ -153,7 +146,6 @@ export class IseeqProjektorComponent implements OnInit {
   }
 
   stepNavigationScroll(x:number):void{
-    console.log("stepp navigation")
     let pos :number = this.currentStepNavPos+x;
     if(pos <= 0){pos=0}
     if(pos >= this.membersXPositions.length-1){pos=this.membersXPositions.length-1} // -2 volt
@@ -163,12 +155,10 @@ export class IseeqProjektorComponent implements OnInit {
   }
 
   private scrollElementToCenter(i:number){
-    console.log("scroll element")
     let pos = this.membersXPositions[i]
     pos = pos - Math.round(this.projektorWindow.nativeElement.clientWidth/2);
     pos = pos + Math.round(this.membersWidth[i]/2);
-    if(this.isFirstTouche){this.renderer2.setStyle(this.aboutScrollable.nativeElement,'left',-pos+'px')};
-    if(!this.isFirstTouche){ this.projektorWindow.nativeElement.scrollLeft=pos};
+    this.renderer2.setStyle(this.aboutScrollable.nativeElement,'left',-pos+'px')
     this.relativeNavValue=pos;
     this.currentStepNavPos=i;
     this.sendIAmInCenterEvent(i)
@@ -182,7 +172,6 @@ export class IseeqProjektorComponent implements OnInit {
   private setStatusBar(): void{
       for( let i=0 ;i<this.isMemberActive.length;i++){this.isMemberActive[i]=false}
       this.isMemberActive[this.currentStepNavPos]=true;
-      console.log(this.currentStepNavPos+ " SteppNAvPos")
   }
 
   private setPlaceholders() : void{

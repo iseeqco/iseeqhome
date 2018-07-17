@@ -1,15 +1,16 @@
-<div class="flag-container">
+<div class="flag-container" [style.color]=" active ? 'white': '#337ab7' "alt="flag">
   <div class="flag-img-cont">
-      <img [class]=visibleClass [src]=visiblePicture alt="flag">
+      <img class=flag [src]=visiblePicture [style.bottom]=" active ? '40px': '0px' "alt="flag">
   </div>
 
-  <div class="flag-text-cont">
-    <h1>2014</h1>
-      <ul> 
-        <li><div class="list-decorator"></div><div class="test">fdkjh kjhkd fdgf gfd fdgsdfgsd fgdsfg dfgsdfgsdf gdfgsdg dfsgdfg fdg s dfg d f ssgfdg</div></li>
-        <li><div class="list-decorator"></div>fdkjhkjhkd</li>
-        <li><div class="list-decorator"></div>fdkjhkjhkd</li>
-        <li><div class="list-decorator"></div>fdkjhkjhkd</li>
+  <div>
+    <h1  [style.bottom]=" active ? '30px':'0px' ">2014</h1>
+      <ul  [style.bottom]=" active ? '30px':'0px' "> 
+        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>
+            <div class="li-text">fdkjh kjhkd fdgf gfd fdgsdfgsd fgdsfg dfgsdfgsdf gdfgsdg dfsgdfg fdg s dfg d f ssgfdg</div></li>
+        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>fdkjhkjhkd</li>
+        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>fdkjhkjhkd</li>
+        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>fdkjhkjhkd</li>
       </ul>
   </div>
 

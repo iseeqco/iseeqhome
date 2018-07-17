@@ -2,8 +2,8 @@
     position:relative;
     border:2px solid green;
     overflow: hidden;
-    transition: all 0.2s ease;
 }
+
 .about-scrollable{
     display:flex;
     position: relative;
@@ -11,19 +11,17 @@
     border:2px solid red;
     overflow-x:visible;
     cursor:grab;
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
 }
 .status-bar{
     position: relative;
     display: flex;
-    justify-content: center;
-    transition: all 0.2s ease; 
+    justify-content: center;    
 }
 .status-bar-item{
     width:10px;
     height: 10px;
-    margin:5px;
-    transition: all 0.2s ease;  
+    margin:5px; 
 }
 
 .step-button{
@@ -34,8 +32,14 @@
 }
 
 .step-button>img{
-    margin-left:20%;
-    margin-right:20%;
-    height:30px;
-    width:30px;
+    margin-left:15%;
+    margin-right:15%;
+    height:35px;
+    width:35px;
+}
+
+.rotate{
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
