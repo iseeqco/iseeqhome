@@ -6,7 +6,7 @@
 
 .cloude_1{
     height:60px;
-    position: absolute;
+    position: relative;
     top:120px;
     left:-20px;
     opacity:0.3;
@@ -29,21 +29,22 @@ a{
     color:white;
 }
 .image{
-   
     transform: translate(-50%,0%);
     left:50%;
     position: relative;
     top:-120px;
-    height:750px;
-    width: 1350px;
+    height:930px;
+    min-width: 1350px;
+    max-width: 1600px;
     background:url("/assets/pictures/home/background_low_q.jpg");
     background-size:100% 100%;
     background-repeat: no-repeat;
+  
 }
 
 .cat {
-    position: absolute;
-    top:312px;
+    position: relative;
+    top:337px;
     left:220px;
     height: 40px;
     width:  40px;
@@ -53,8 +54,8 @@ a{
 
   .dog {
     position: absolute;
-    bottom:52px;
-    left:640px;
+    bottom:62px;
+    left:770px;
     height: 40px;
     width:  45px;
     background:url('/assets/animation/dog.png') 0px 0px;
@@ -78,7 +79,7 @@ a{
   .game-button{
       position: absolute;
       left:50%;
-      top:520px;
+      top:610px;
       transform: translate(-50%,0%)
   }
 
@@ -100,6 +101,8 @@ a{
         background:url("/assets/pictures/home/background_m.jpg");
         background-repeat:no-repeat;
         background-position: center;
+        min-width: initial;
+        max-width: initial
     }
     .visible{
         display:none;
@@ -115,10 +118,13 @@ a{
         top:-30px;
         left:49%;
         background-size: cover;
+        min-width: initial;
     }
     .hatter{
         display:none;
     }
+    
+   
   }
 
 

@@ -2,6 +2,8 @@ TODO:
      -gomb svg beillesztése
      --Mat Ikonok lecserélése !!! nagy tőle a style.css !!!
 
+     --A team komponent ne zarodjon be ha az oldalso scrollra megyünk rá
+
 ABOUT
 Flag component:
     3 nezettel: fix height fix width -el
