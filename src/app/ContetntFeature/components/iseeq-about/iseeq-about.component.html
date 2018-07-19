@@ -1,18 +1,22 @@
-<div class="site-base2" style=background-color:gray>
+<div class="site-base2">
     <h2 class="site-title">ABOUT</h2>
-
-<app-iseeq-projektor [membersCentered]=true [projektorWidth]="'100%'" [statusBar]=false [startInCenter]=true [startPosition]=5>
-        <div iseeqProjektor  proWidth="300"(iamincenter)="elementInCenter($event)">0</div>
-        <div iseeqProjektor  proWidth="300">1</div>
-        <div iseeqProjektor  proWidth="300">2</div>
-        <div iseeqProjektor  proWidth="300">3</div>
-        <div iseeqProjektor  proWidth="300">4</div>
-        <div iseeqProjektor  proWidth="300" (iamincenter)="elementInCenter($event)">5</div>
-        <div iseeqProjektor  proWidth="300">6</div>
-        <div iseeqProjektor  proWidth="300">7</div>
-        <div iseeqProjektor  proWidth="300">8</div>
-</app-iseeq-projektor>
-
+        <div class="light-blue">
+            <div class=projektor-background>
+                <div class="flore">        
+                    <app-iseeq-projektor [membersCentered]=true [projektorWidth]="'100%'" [statusBar]=false [startInCenter]=true [startPosition]=5>
+                            <div iseeqProjektor  proWidth="300"(iamincenter)="elementInCenter($event)">0</div>
+                            <div iseeqProjektor  proWidth="300">1</div>
+                            <div iseeqProjektor  proWidth="300">2</div>
+                            <div iseeqProjektor  proWidth="300">3</div>
+                            <div iseeqProjektor  proWidth="300">4</div>
+                            <div iseeqProjektor  proWidth="300" (iamincenter)="elementInCenter($event)">5</div>
+                            <div iseeqProjektor  proWidth="300">6</div>
+                            <div iseeqProjektor  proWidth="300">7</div>
+                            <div iseeqProjektor  proWidth="300">8</div>
+                    </app-iseeq-projektor>
+                </div>
+            </div>
+        </div>
 <app-iseeq-flag [active]=activeFlag [texts]=flagTexts></app-iseeq-flag>
 
 

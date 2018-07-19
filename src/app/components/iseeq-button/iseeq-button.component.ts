@@ -12,6 +12,7 @@ export class IseeqButtonComponent implements OnInit {
   @Input('background') background : string;
   @Input('size') size : string;
   @Input('shadow') shadow:string;
+  @Input ('width') width:string;
 
   @ViewChild('button') el : ElementRef;
   
@@ -33,6 +34,7 @@ export class IseeqButtonComponent implements OnInit {
 
   
   ngOnInit() {
+    this.renderer.setStyle(this.el.nativeElement,'min-width',this.width);
     this.renderer.setStyle(this.el.nativeElement,'color',this.textcolor);
     this.renderer.setStyle(this.el.nativeElement,'background-color',this.background);
     this.renderer.addClass(this.el.nativeElement,this.size);

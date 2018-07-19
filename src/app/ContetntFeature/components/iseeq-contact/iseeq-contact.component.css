@@ -1,0 +1,51 @@
+.site-base2{
+    padding-top:1px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.text-container{
+    margin-top: 70px;
+    text-align: center;
+    font-size:25px;
+    color:black;
+    font-family:'brandonbld';
+    line-height: 70%;
+
+}
+.mail{
+    color:#337ab7;
+}
+
+.text-end{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.button-container{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.button{
+    margin:20px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .button-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button{
+        margin: 10px 0px 10px 0px;
+    }
+
+    .text-container{
+        line-height: 100%;
+    }
+
+}

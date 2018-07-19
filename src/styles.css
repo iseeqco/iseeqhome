@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @font-face {
     font-family:'bitbold2';
@@ -8,7 +6,6 @@
          url('./assets/fonts/bitbold-webfont.woff2') format('woff2');
          font-weight:100;
 }
-
 @font-face {
     font-family:'bitbold';
     src: url('./assets/fonts/bitbold-webfont.eot');
@@ -50,7 +47,6 @@ body{
     font-family:'opensans';
     color:#252b28;
     font-size:16px;
-   
 }
 
 a{
@@ -61,7 +57,6 @@ a{
     height: 1000px;
     border:1px solid black;
     overflow: hidden;
-   
 }
 .site-title{
     margin-top: 80px;
