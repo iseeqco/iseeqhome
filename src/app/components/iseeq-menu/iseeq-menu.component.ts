@@ -68,7 +68,7 @@ export class IseeqMenuComponent implements OnInit {
        this.sMenuIcon="./assets/pictures/ikon/baseline-menu-24px.svg"}
   }
  
-  private scrollToComponent(component:string) : void {
+  private scrollToComponent(component:string) : void {  //out ????
     let position = this.navService.getComponentPosition('/home/'+component)
     window.scrollTo({top:position,behavior: "smooth"})
   }

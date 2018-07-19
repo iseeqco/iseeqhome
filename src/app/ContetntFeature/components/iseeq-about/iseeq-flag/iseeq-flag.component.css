@@ -3,6 +3,7 @@
     width:350px;
     border:1px solid black;
     margin:10px;
+    height:400px;
 }
 
 .flag-img-cont{
@@ -25,7 +26,7 @@ li{display: flex}
     min-width:7px;
     height: 7px;
     display:inline-block;
-    margin-top:5px;
+    margin-top:7px;
     margin-right:5px;
 }
 
@@ -33,14 +34,19 @@ li{display: flex}
     display: inline-block;
 }
 
+.a{
+    color:inherit;
+    text-decoration: underline;
+}
+
 .flag{
   position: relative;
   border: 1px solid black;
-  height:450px;
+  height:400px;
 }
 
 @media screen and (max-width: 600px) {
   .flag-container{
-    width:280px;
+    width:250px;
   } 
 }

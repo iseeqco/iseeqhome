@@ -1,21 +1,37 @@
 <div class="site-base2" style=background-color:gray>
     <h2 class="site-title">ABOUT</h2>
 
-<app-iseeq-projektor [membersCentered]=true [projektorWidth]="'100%'" [statusBar]=false [startInCenter]=true [startPosition]=5>
-        <div iseeqProjektor  proWidth="300"(iamincenter)="elementInCenter($event)">0</div>
-        <div iseeqProjektor  proWidth="300">1</div>
-        <div iseeqProjektor  proWidth="300">2</div>
-        <div iseeqProjektor  proWidth="300">3</div>
-        <div iseeqProjektor  proWidth="300">4</div>
-        <div iseeqProjektor  proWidth="300" (iamincenter)="elementInCenter($event)">5</div>
-        <div iseeqProjektor  proWidth="300">6</div>
-        <div iseeqProjektor  proWidth="300">7</div>
-        <div iseeqProjektor  proWidth="300">8</div>
+<app-iseeq-projektor [membersCentered]=true [projektorWidth]="'99%'" [statusBar]=false [startInCenter]=true>
+   
+    <app-iseeq-flag  *ngFor="let flagData of flagDatas" (iamincenter)="elementInCenter(0)" [active]=flagData.active [texts]=flagData.texts [year]=flagData.year></app-iseeq-flag>   
+
+<!--
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(0)">0</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(1)">1</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(2)">2</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(3)">3</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(4)">4</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(5)">5</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(6)">6</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(7)">7</div>
+<div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(8)">8</div> -->
+
 </app-iseeq-projektor>
 
-<app-iseeq-flag [active]=activeFlag [texts]=flagTexts></app-iseeq-flag>
 
 
+<!--
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(0)">0</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(1)">1</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(2)">2</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(3)">3</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(4)">4</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(5)">5</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(6)">6</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(7)">7</div>
+        <div iseeqProjektor  proWidth="250" (iamincenter)="elementInCenter(8)">8</div>
+         [startPosition]=5
+-->
 
 
 

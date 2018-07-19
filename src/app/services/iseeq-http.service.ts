@@ -6,6 +6,7 @@ import {HttpClient} from '@angular/common/http';
 import {NavigationData } from '../datatypes/iseeq-navigation.data';
 import { IseeqFooterConfigData } from "src/app/datatypes/iseeq-footer-config.data";
 import { TeamMembers } from '../datatypes/iseeq-team-member';
+import { AboutDatas } from '../datatypes/iseeq-about.data';
 
 @Injectable()
 export class IseeqHttpService{
@@ -42,5 +43,10 @@ getTeamMemberes(){
     let response=this.http.get<TeamMembers>(url+file);
     return response;
 }
-
+getAboutContent(){
+    let url:string="./assets/content/";
+    let file:string="about_content.json";
+    let response=this.http.get<AboutDatas>(url+file);
+    return response;
+}
 }

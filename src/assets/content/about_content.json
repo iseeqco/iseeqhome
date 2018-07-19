@@ -1,0 +1,15 @@
+{
+    "aboutDatas":[
+        {"year":"2012",
+         "texts":["born of IseeQ"],
+         "active":false
+        },
+        {"year":"2013",
+         "texts":["first dev team building from zero for US based company","good bye coworking  – hello own office","became an active player in the meetup and conf scene / series of international geek together"],
+         "active":false
+        }
+
+
+
+    ]
+}

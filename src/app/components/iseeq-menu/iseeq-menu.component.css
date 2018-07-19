@@ -3,6 +3,7 @@ a{
     font-size: 15px;
     color:black;
     margin-right:3%;
+    text-decoration: none;
 }
 .active-link{
     color:#45d48b;

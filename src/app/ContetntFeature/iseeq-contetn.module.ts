@@ -18,7 +18,6 @@ import { IseeqButtonComponent } from '../components/iseeq-button/iseeq-button.co
 import { IseeqProjektorComponent } from '../components/iseeq-projektor/iseeq-projektor.component';
 
 import { IseeqContentSiteDirective } from './direktives/iseeq-content-site.direktive';
-import { IseeqProjektorDirective } from './direktives/iseeq-projektor.direktive';
 import { IseeqFlagComponent } from './components/iseeq-about/iseeq-flag/iseeq-flag.component';
 
 
@@ -51,7 +50,6 @@ export const contentRoutes : Routes=[
     IseeqFlipCardComponent,
     IseeqButtonComponent,
     IseeqProjektorComponent,
-    IseeqProjektorDirective,
     IseeqFlagComponent
   ],
   exports:[

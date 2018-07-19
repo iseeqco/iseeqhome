@@ -1,6 +1,7 @@
 TODO:  
-     -gomb svg beillesztése
-     --Mat Ikonok lecserélése !!! nagy tőle a style.css !!!
+    a flag componentben meg kell irni a get metódusokat
+    a Query list lekerest kivenni a lifecycle hook-bitbold
+    event emiter...
 
 ABOUT
 Flag component:
@@ -104,5 +105,8 @@ https://www.youtube.com/watch?v=Iducm-RNKvA
 
 
 https://www.youtube.com/watch?v=Iducm-RNKvA&t=2089s
+
+
+https://www.youtube.com/watch?v=nnsGwS7sFeo&list=RDQMauMeh8VkXb4&start_radio=1
 
 

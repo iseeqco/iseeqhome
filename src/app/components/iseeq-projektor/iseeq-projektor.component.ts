@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef, Renderer2, ContentChildren, QueryList,Input, Testability} from '@angular/core';
 
-import { IseeqProjektorDirective } from '../../ContetntFeature/direktives/iseeq-projektor.direktive';
+import { IseeqFlagComponent } from '../../ContetntFeature/components/iseeq-about/iseeq-flag/iseeq-flag.component';
 
 
 @Component({
@@ -20,7 +20,7 @@ export class IseeqProjektorComponent implements OnInit {
   @ViewChild('projektorWindow')                projektorWindow : ElementRef;
   @ViewChild('frontWhiteSpace')                frontWhiteSpace : ElementRef;
   @ViewChild('endWhiteSpace')                  endWhiteSpace : ElementRef;
-  @ContentChildren(IseeqProjektorDirective)    members : QueryList<IseeqProjektorDirective> 
+  @ContentChildren(IseeqFlagComponent)         members : QueryList<IseeqFlagComponent> 
   @Input('membersCentered')                    areMembersCentered:boolean;
   @Input('projektorWidth')                     projektorWidth:string;
   @Input('startPosition')                      startPosition:number;
@@ -52,16 +52,16 @@ export class IseeqProjektorComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    if(this.startInCenter){this.setPlaceholders()}
+    if(this.startInCenter){setTimeout(()=>this.setPlaceholders())}
     this.setMembersPostitons(this.members)
-    if(this.startPosition){this.scrollElementToCenter(this.startPosition)}
+    if(this.startPosition){setTimeout(()=>this.scrollElementToCenter(this.startPosition))}
     this.members.forEach( () => this.isMemberActive.push(false) );
   }
   
   onTouchStart(event){
     this.aktuellScreenx=event.changedTouches[0].clientX;
     this.previouseScreenx=this.aktuellScreenx;
-    event.preventDefault()
+   // event.preventDefault()
   }
 
   onTouchMove(event){
@@ -69,16 +69,17 @@ export class IseeqProjektorComponent implements OnInit {
     this.relativeNavValue=this.relativeNavValue+this.previouseScreenx-this.aktuellScreenx;
     this.previouseScreenx=this.aktuellScreenx;
     this.renderer2.setStyle(this.aboutScrollable.nativeElement,'left',-this.relativeNavValue+'px');
-    event.preventDefault()
+   // event.preventDefault()
   }
 
-  onToucheEnd(){
+  onToucheEnd(event){
     this.selectElementForScroll()
     this.sideScrollControll();
-    event.preventDefault()
+   // event.preventDefault()
   }
 
   onMouseDown(event){
+    this.setMembersPostitons(this.members)
     this.previouseScreenx=event.screenX;
     this.aktuellScreenx=event.screenX;
     this.mouseMoveListener=this.renderer2.listen(this.aboutScrollable.nativeElement,'mousemove',(event)=>{this.onMouseMove(event)});
@@ -118,10 +119,12 @@ export class IseeqProjektorComponent implements OnInit {
     }
   }
         
-  private setMembersPostitons(members:QueryList<IseeqProjektorDirective>):void {
+  private setMembersPostitons(members:QueryList<IseeqFlagComponent>):void {
+    console.log(members)
     members.forEach(element => {
       this.membersXPositions.push(element.getXPosition())                   
       this.membersWidth.push(element.getWidth());
+      console.log(element.getWidth())
     });
   }
                          //@kiválasztja azt az elemet ami legközelebb van a projektor ablak közepéhez és meghivja az elem sorszámával a középre igazító metódust

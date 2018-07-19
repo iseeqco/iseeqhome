@@ -1,8 +1,8 @@
 <div #projektorWindow class="projektor-window" draggable="false" ondragstart="return false;" 
-    (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)" (touchstart)="onTouchStart($event)"
+    (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp()" (touchstart)="onTouchStart($event)"
     (touchmove)="onTouchMove($event)" (touchend)="onToucheEnd($event)">
 
-    <div #aboutScrollable class="about-scrollable"draggable="false" ondragstart="return false;" (touchend)="onToucheEnd()">
+    <div #aboutScrollable class="about-scrollable"draggable="false" ondragstart="return false;">
         <div #frontWhiteSpace style="border:5px solid yellow;"></div>
         <ng-content></ng-content>
         <div #endWhiteSpace style="border:2px solid yellow;"></div>

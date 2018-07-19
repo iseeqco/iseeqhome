@@ -14,11 +14,3 @@ export class TeamMember {
 export class TeamMembers{
     teamMembers : TeamMember[];
 }
-
-/*
-export class SocialMediaLink{
-    link:string;
-    ikon:string;
-    alt: string;
-}
-*/ 

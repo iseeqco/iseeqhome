@@ -4,17 +4,20 @@
   </div>
 
   <div>
-    <h1  [style.bottom]=" active ? '30px':'0px' ">2014</h1>
+    <h1  [style.bottom]=" active ? '30px':'0px' ">{{flagYear}}</h1>
       <ul  [style.bottom]=" active ? '30px':'0px' "> 
-        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>
-            <div class="li-text">fdkjh kjhkd fdgf gfd fdgsdfgsd fgdsfg dfgsdfgsdf gdfgsdg dfsgdfg fdg s dfg d f ssgfdg</div></li>
-        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>fdkjhkjhkd</li>
-        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>fdkjhkjhkd</li>
-        <li><div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>fdkjhkjhkd</li>
+
+        <li *ngFor="let text of texts" >
+            <div class="list-decorator" [ngStyle]="{'background-color': active ? 'white' : '#337ab7','box-shadow':active ? '1px 2px #337ab7' : 'none'}"></div>
+            <div class="li-text">
+             <span [innerHTML]=text></span><br>
+            </div>
+        </li>
+
       </ul>
   </div>
 
 </div>
-<h1 (click)="changState()">click</h1>
+
 
 

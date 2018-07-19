@@ -1,4 +1,6 @@
 import { Component} from '@angular/core';
+import { IseeqHttpService } from '../../../services/iseeq-http.service';
+import { AboutDatas, AboutData } from '../../../datatypes/iseeq-about.data';
 
 @Component({
   selector: 'app-iseeq-about',
@@ -6,12 +8,29 @@ import { Component} from '@angular/core';
   styleUrls: ['./iseeq-about.component.css']
 })
 export class IseeqAboutComponent{
-  flagTexts : string[] =["kutya","macska","eger"];
-  activeFlag: boolean = true;
 
-elementInCenter(event:any){
+      flagDatas:AboutData[]
+
+constructor(
+  private httpServ : IseeqHttpService
+)
+{
+  
+}
+
+ngOnInit(){
+  this.initialiseSiteContent();
+}
+
+initialiseSiteContent(){
+  this.httpServ.getAboutContent().subscribe((data : AboutDatas)=>{
+    this.flagDatas=data.aboutDatas;
+  })
+}
+
+elementInCenter(element:number){
   console.log("event catched")
-  console.log(event)
+  console.log(element)
 }
   }
 
