@@ -37,10 +37,15 @@ export class IseeqTeamComponent {
           })
   }
 
-  onMouseLeave(){
-   this.displayedTeamMembers=this.setDisplayedTeamMembers(this.teamMembers.length,this.displayedMembersCount);
-   this.previousDisplayedMembersCount=this.displayedMembersCount;
-   if(this.maxDisplayedTeamMember > this.displayedTeamMembers.length){this.existMoreMember=true}
+  onMouseLeave(event){
+    if(event.relatedTarget){
+      let tag = event.relatedTarget.tagName
+      if( tag != "HTML" ){ 
+          this.displayedTeamMembers=this.setDisplayedTeamMembers(this.teamMembers.length,this.displayedMembersCount);
+          this.previousDisplayedMembersCount=this.displayedMembersCount;
+          if(this.maxDisplayedTeamMember > this.displayedTeamMembers.length){this.existMoreMember=true}
+      }
+    }
   }
 
   setDisplayedMembersCount(): number {

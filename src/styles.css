@@ -1,10 +1,11 @@
+
+
 @font-face {
     font-family:'bitbold2';
     src: url('./assets/fonts/bitbold-webfont.woff') format('woff'),
          url('./assets/fonts/bitbold-webfont.woff2') format('woff2');
          font-weight:100;
 }
-
 @font-face {
     font-family:'bitbold';
     src: url('./assets/fonts/bitbold-webfont.eot');
@@ -46,7 +47,6 @@ body{
     font-family:'opensans';
     color:#252b28;
     font-size:16px;
-   
 }
 
 a{
@@ -59,7 +59,6 @@ a{
     height: 1000px;
     border:1px solid black;
     overflow: hidden;
-   
 }
 .site-title{
     margin-top: 80px;

@@ -3,6 +3,8 @@ TODO:
     a Query list lekerest kivenni a lifecycle hook-bitbold
     event emiter...
 
+     --A team komponent ne zarodjon be ha az oldalso scrollra megyünk rá
+
 ABOUT
 Flag component:
     3 nezettel: fix height fix width -el
