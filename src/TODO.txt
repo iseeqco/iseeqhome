@@ -1,9 +1,10 @@
 TODO:  
-    a flag componentben meg kell irni a get metódusokat
-    a Query list lekerest kivenni a lifecycle hook-bitbold
-    event emiter...
+   projektor: nehezen lapoz jobra ha levesszük a projektor window meretet.
+   rajta hagyja néha a mouse move event listenert ha lejerül rola az egér. /a mouse leave esemény kezelőt valószínű at kell tenni a beső div re/
+   
+  
 
-     --A team komponent ne zarodjon be ha az oldalso scrollra megyünk rá
+     
 
 ABOUT
 Flag component:
@@ -110,5 +111,16 @@ https://www.youtube.com/watch?v=Iducm-RNKvA&t=2089s
 
 
 https://www.youtube.com/watch?v=nnsGwS7sFeo&list=RDQMauMeh8VkXb4&start_radio=1
+
+
+
+
+
+
+
+
+
+
+
 
 

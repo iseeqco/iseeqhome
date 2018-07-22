@@ -1,11 +1,11 @@
-import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
+import { Component,Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-iseeq-flag',
   templateUrl: './iseeq-flag.component.html',
   styleUrls: ['./iseeq-flag.component.css']
 })
-export class IseeqFlagComponent implements OnInit {
+export class IseeqFlagComponent{
     
 @Input('active')  active:boolean;         //configurationen
 @Input('texts')   texts:string[];
@@ -13,7 +13,6 @@ export class IseeqFlagComponent implements OnInit {
 
                   activePicture:string;
                   passivePicture:string;
-
                   visiblePicture:string;  //activated values
     
 @Output() iamincenter = new EventEmitter<boolean>();
@@ -24,6 +23,9 @@ export class IseeqFlagComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.configureView(this.active);
+  }
+  ngOnChanges(){
     this.configureView(this.active);
   }
 
@@ -50,15 +52,6 @@ export class IseeqFlagComponent implements OnInit {
 
   public getState() :boolean {
     return this.active
-  }
-
-  getWidth():number {return 888/*this.elRef.nativeElement.clientWidth*/}
-
-  getXPosition():number{return 666/*this.elRef.nativeElement.getBoundingClientRect().x*/}
-  
-  sendCenteredSignal(){
-      this.iamincenter.emit(true);
-      console.log("event emiter emited an event")
   }
 
 }

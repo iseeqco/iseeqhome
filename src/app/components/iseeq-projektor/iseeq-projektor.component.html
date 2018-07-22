@@ -1,20 +1,24 @@
 <div #projektorWindow class="projektor-window" draggable="false" ondragstart="return false;" 
     (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp()" (touchstart)="onTouchStart($event)"
-    (touchmove)="onTouchMove($event)" (touchend)="onToucheEnd($event)">
+    (touchmove)="onTouchMove($event)" (touchend)="onToucheEnd($event)" (mouseover)="onMouseOver()" 
+    (mouseleave)="onMouseLeave()">
 
     <div #aboutScrollable class="about-scrollable"draggable="false" ondragstart="return false;">
-        <div #frontWhiteSpace style="border:5px solid yellow;"></div>
+        <div #frontWhiteSpace></div>
         <ng-content></ng-content>
-        <div #endWhiteSpace style="border:2px solid yellow;"></div>
+        <div #endWhiteSpace></div>
+    </div>
+    
+    <img class="img-1" [src]=buttonSource (click)="stepNavigationScroll(-1)" alt="stepp -" > 
+    <img class="img-2" [src]=buttonSource (click)="stepNavigationScroll(1)" alt="stepp +" >
+    
+    <div *ngIf="statusBar" class="status-bar" >
+        <div *ngFor="let member of members; let i = index" class="status-bar-item" [style.background-color]="!isMemberActive[i] ? 'lightgray':'#45d48b'" ></div>
     </div>
 
 </div>
 
-<div *ngIf="statusBar" class="status-bar" >
-    <div *ngFor="let member of members; let i = index" class="status-bar-item" [style.background-color]="!isMemberActive[i] ? 'lightgray':'#45d48b'" ></div>
-</div>
 
-<div class="step-button">
-    <img class="rotate" src="/assets/pictures/ikon/arrow-full.svg" (click)="stepNavigationScroll(-1)" alt="stepp -" > 
-    <img src="/assets/pictures/ikon/arrow-full.svg" (click)="stepNavigationScroll(1)" alt="stepp +" >
-</div>
+
+
+

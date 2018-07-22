@@ -1,6 +1,10 @@
+.site-base2{
+    min-height:500px;
+}
 .light-blue{
     background: #b6d4eb;
 }
+
 .projektor-background{
     position: relative;
     background:url("/assets/pictures/about/skyline.png");
@@ -8,18 +12,19 @@
     background-position: bottom;
 }
 
-
 .projectable{
     height:400px;
     margin:20px;
     background-color:blue;
 }
 
-    
 div{color:white}
 
 .flore{
-    position: relative;;
+    position: absolute;
+    bottom:0px;
+    height:40px;
+    width:100%;
     background:url("/assets/pictures/about/floor.png");
     background-position: bottom;
     background-repeat: no-repeat;

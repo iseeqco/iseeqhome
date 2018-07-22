@@ -29,8 +29,9 @@ initialiseSiteContent(){
 }
 
 elementInCenter(element:number){
-  console.log("event catched")
-  console.log(element)
+  let i :number = 0;
+  this.flagDatas.forEach(()=>{this.flagDatas[i].active=false ; i++})
+  this.flagDatas[element].active=true;
 }
   }
 

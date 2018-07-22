@@ -7,9 +7,31 @@
         {"year":"2013",
          "texts":["first dev team building from zero for US based company","good bye coworking  – hello own office","became an active player in the meetup and conf scene / series of international geek together"],
          "active":false
+        },
+        {"year":"2014",
+            "texts":["our very first on-site recruitment project","HQ -the social coffee place project","first article about us",
+                    "first <a href='https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies'>unicorn valued</a> international client partnering up with CentralEuropeanStartupAwards"],
+            "active":false
+        },
+        {"year":"2015",
+            "texts":["our first long term scaling on-site project","creating our spin off company xLabs",
+                    "second <a href='https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies'>unicorn valued</a> international client"],
+            "active":false
+        },
+        {"year":"2016",
+            "texts":["first non-Hungarian colleague","partners in Budapest Safary","500 th placement of IseeQ","First full RPO project"],
+            "active":false
+        },
+        {"year":"2017",
+            "texts":["first HR consultancy project","four on-site recruitment projects","partnering with GlobalStartupAwards","5 years on the market, and still having fun"],
+            "active":false
         }
-
-
-
     ]
 }
+
+
+
+
+
+
+

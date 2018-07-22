@@ -1,21 +1,23 @@
 .projektor-window{
     position:relative;
-    border:2px solid green;
     overflow: hidden;
 }
 
 .about-scrollable{
     display:flex;
     position: relative;
+    width:100%;
     flex-wrap: nowrap;
-    border:2px solid red;
     overflow-x:visible;
     cursor:grab;
+    transition: all 0.2s ease;
+    
 }
 .status-bar{
-    position: relative;
+    width:100%;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;   
 }
 .status-bar-item{
     width:10px;
@@ -24,7 +26,8 @@
 }
 
 .step-button{
-    position: relative;
+    width:100%;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -37,8 +40,29 @@
     width:35px;
 }
 
-.rotate{
+.img-1{
+    height:35px;
+    width:35px;
+    position:absolute;
+    top:50%;
+    left:2%;
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
+.img-2{
+    float: right;
+    height:35px;
+    width:35px;
+    position:absolute;
+    top:50%;
+    right:2%;
+}
+
+@media screen and (max-width: 600px) {
+    .about-scrollable{
+        transition:none;
+        
+    }
+  }
