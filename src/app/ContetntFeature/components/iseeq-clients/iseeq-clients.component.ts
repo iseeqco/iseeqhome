@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, HostListener} from '@angular/core';
 
 
 @Component({
@@ -7,8 +7,23 @@ import { Component} from '@angular/core';
   styleUrls: ['./iseeq-clients.component.css']
 })
 export class IseeqClientsComponent {
-  
-  
-
  
+  projectorWidth:string;
+
+
+  constructor(){
+
+  }
+
+ ngOnInit(){
+  this.setProjectorWidth();
+ }
+
+setProjectorWidth(){
+  if(window.outerWidth <= 600) {this.projectorWidth="300px";console.log("300")}
+  if(window.outerWidth > 600) {this.projectorWidth="550px";console.log("500")} 
+}
+
+
+
 }

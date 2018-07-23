@@ -37,6 +37,11 @@ export class IseeqTeamComponent {
           })
   }
 
+  onMouseOver(event:Event){
+    this.showAllMember();
+    event.preventDefault();
+  }
+
   onMouseLeave(event){
     if(event.relatedTarget){
       let tag = event.relatedTarget.tagName
@@ -61,6 +66,14 @@ export class IseeqTeamComponent {
     let displayedTeamMembers: TeamMember[];
     displayedTeamMembers=this.teamMembers.slice(0,count);
     return displayedTeamMembers;
+  }
+
+  showAllMember(){
+    if (window.innerWidth >= 1200){
+      this,this.displayedTeamMembers=this.teamMembers;
+      this.existMoreMember=false;
+    }
+
   }
 
   showMore(){

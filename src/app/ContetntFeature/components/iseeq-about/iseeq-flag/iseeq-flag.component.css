@@ -3,7 +3,7 @@
     display:flex;
     width:350px;
     margin:10px;
-    height:400px;
+    height:460px;
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
      -khtml-user-select: none; 
@@ -45,7 +45,7 @@ li{display: flex}
 
 .flag{
   position: relative;
-  height:400px;
+  height:463px;
 }
 
 @media screen and (max-width: 600px) {

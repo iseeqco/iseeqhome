@@ -32,7 +32,13 @@
     margin:20px;
 }
 
+.form-container{
+   
+}
 
+.info-container{
+    margin-top: 30px;
+}
 
 @media only screen and (max-width: 1000px) {
     .button-container{
