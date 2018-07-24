@@ -13,7 +13,7 @@
     <img class="img-2" [src]=buttonSource (click)="stepNavigationScroll(1)" alt="stepp +" >
     
     <div *ngIf="statusBar" class="status-bar" >
-        <div *ngFor="let member of members; let i = index" class="status-bar-item" [style.background-color]="!isMemberActive[i] ? 'lightgray':'#45d48b'" ></div>
+        <div *ngFor="let member of members; let i = index" class="status-bar-item" [style.background-color]="!isMemberActive[i] ? statusBarBackgroundColor : statusBarColor" ></div>
     </div>
 
 </div>
