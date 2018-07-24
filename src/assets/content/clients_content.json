@@ -1,0 +1,63 @@
+{"clientDatas":[
+    {
+        "logoUrl":"./assets/pictures/clients/gizmo_media_group.jpg",
+        "logoAlt":"Gizmo Media Group logo",
+        "quote":"“IseeQ have been providing recruitment services for us for more than 3 years. During this time they were always quickly adjusting to our changed priorities,  moreover, they even helped finetuning our hiring processes. Their up-to-date feedback about the changes in the Hungarian job market makes them one of our most valuable recruitment partners.”",
+        "clientPictureUrl":"./assets/pictures/clients/eszpee_ping-300x300.jpg",
+        "clientPictureAlt":"Peter Szasz",
+        "clientName":"PETER SZÁSZ",
+        "clientsPosition":"Managing Director @ Gizmo Media Group /Budapest/"
+    },
+    {
+        "logoUrl":"./assets/pictures/clients/falcon.jpg",
+        "logoAlt":"Falcon IO ",
+        "quote":" “IseeQ initially helped us scale our team in Copenhagen. When we set up our office in Budapest, they became a vital part of our operation there, helping us in legal matters, internal operations and of course building the team from ground up.”",
+        "clientPictureUrl":"./assets/pictures/clients/niels_bjerg.jpg",
+        "clientPictureAlt":"Niels Bjerg",
+        "clientName":"NIELS BJERG",
+        "clientsPosition":"Senior Director Of Engineering @ Falcon.io"
+    },
+    {
+        "logoUrl":"./assets/pictures/clients/transferwise.jpg",
+        "logoAlt":"TransferWise",
+        "quote":" “Since we opened our office in Budapest IseeQ did not only provide high-end recruitment services but also helped us to settle ourselves more in the local IT ecosystem. Their expertise and ability to understand our culture, and engineering philosophy, really contributed &amp; facilitated in the creation of our new HUB.” ",
+        "clientPictureUrl":"./assets/pictures/clients/andrei.jpg",
+        "clientPictureAlt":"ANDREI V. MURESAN",
+        "clientName":"ANDREI V. MURESAN",
+        "clientsPosition":"Technical Recruiter @ TransferWise"
+    },
+    {
+        "logoUrl":"./assets/pictures/clients/emarsys-1-300x158.png",
+        "logoAlt":"emarsys",
+        "quote":" “We met the team at IseeQ after a long research process and immediately had a very good working relationship with them. It is significant that they provide such flexibility that makes us feel appreciated while our needs and requirements are being met and the candidates' perspective is kept in focus at the same time. I can highly recommend IseeQ if you are looking for dedication and truly quality candidates through tailor made processes instead of mass recruitment options. In the last 4 years our company scaled up from 50 to200 employees with the help of IseeQ and therefore IseeQ is and will be our strategic partner in recruitment for years to come.” ",
+        "clientPictureUrl":"./assets/pictures/clients/levente_otti.jpg",
+        "clientPictureAlt":"LEVENTE OTTI",
+        "clientName":"LEVENTE OTTI",
+        "clientsPosition":"Head of Big Data Emarsys"
+    },
+    {
+        "logoUrl":"",
+        "logoAlt":"",
+        "quote":"",
+        "clientPictureUrl":"",
+        "clientPictureAlt":"",
+        "clientName":"",
+        "clientsPosition":""
+
+    },
+    {
+        "logoUrl":"",
+        "logoAlt":"",
+        "quote":"",
+        "clientPictureUrl":"",
+        "clientPictureAlt":"",
+        "clientName":"",
+        "clientsPosition":""
+
+    }
+]
+
+
+
+
+}

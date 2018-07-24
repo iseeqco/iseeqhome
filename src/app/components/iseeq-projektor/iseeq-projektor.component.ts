@@ -130,8 +130,6 @@ export class IseeqProjektorComponent implements OnInit{
       this.membersWidth.push(element.getWidth());
       this.membersCeterPosition.push( (Math.round(element.getXPosition()+(element.getWidth()/2) ))-this.projektorWindow.nativeElement.getBoundingClientRect().x );
     })
-    console.log(this.membersCeterPosition)
-    console.log(this.projektorWindow.nativeElement.getBoundingClientRect().x)
   }
                          //@kiválasztja azt az elemet aminek a kezdő pontja legközelebb van a projektor ablak közepéhez és meghivja az elem sorszámával a középre igazító metódust
   private selectElementForScroll() : void {

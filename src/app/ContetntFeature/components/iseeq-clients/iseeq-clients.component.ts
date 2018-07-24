@@ -20,8 +20,8 @@ export class IseeqClientsComponent {
  }
 
 setProjectorWidth(){
-  if(window.outerWidth <= 600) {this.projectorWidth="300px";console.log("300")}
-  if(window.outerWidth > 600) {this.projectorWidth="550px";console.log("500")} 
+  if(window.outerWidth <= 600) {this.projectorWidth="300px";}
+  if(window.outerWidth > 600) {this.projectorWidth="550px";} 
 }
 
 

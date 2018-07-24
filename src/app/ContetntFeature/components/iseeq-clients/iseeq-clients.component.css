@@ -3,17 +3,29 @@
     padding-top:30px;
     padding-bottom: 30px;
 }
+
 .client-container{
     position: relative;
     display:flex;
     justify-content: center;
+    background-image: url("/assets/pictures/clients/map.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85% ;
 }
+
+app-iseeq-projektor{
+    position:relative;
+    top:-20px;
+}
+
 .clients-card{
     margin:10px;
     width:550px;
     min-height:550px;
     background:white;
     box-shadow:5px 5px 15px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
     -khtml-user-select: none; 
@@ -21,20 +33,54 @@
     -ms-user-select: none; 
      user-select: none; 
 }
+
 .clients-logo{
-
+    padding-top:40px;
+    display: flex;
+    justify-content: center;
 }
+
 .clients-quote{
-
+    text-align: center;
+    padding-left:50px;
+    padding-right: 50px;
+    font-size: 15px;
+    line-height: 170%;
 }
+
 .clients-data{
-
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
 }
+
 .clients-data-picture{
-
+    height: 60px;
+    width:60px;
+    box-shadow:4px 4px #45d48b;
 }
+
+.clients-data-picture>img{
+    width:60px;
+    height: 60px;
+}
+
 .clients-data-text{
-    
+    width:150px;
+    font-size: 14px;
+    margin-left:30px;
+    line-height: 140%;
+}
+
+.bold{
+    font-family: "open_sans",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.client-cities{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px) {
