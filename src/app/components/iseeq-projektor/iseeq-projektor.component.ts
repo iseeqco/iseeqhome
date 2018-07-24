@@ -22,6 +22,8 @@ export class IseeqProjektorComponent implements OnInit{
   @Input('statusBar')                          statusBar:boolean;
   @Input('startInCenter')                      startInCenter:boolean;
   @Input('buttonSource')                       buttonSource:string;
+  @Input('statusBarBackgroundColor')           statusBarBackgroundColor:string;
+  @Input('statusBarColor')                     statusBarColor:string;
                                                mouseMoveListener: () => void;
                                                isFirstTouche:boolean;
                                                firstAction:boolean;

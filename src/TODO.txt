@@ -1,19 +1,15 @@
-TODO:  
-   projektor: nehezen lapoz jobra ha levesszük a projektor window meretet.
-   rajta hagyja néha a mouse move event listenert ha lejerül rola az egér. /a mouse leave esemény kezelőt valószínű at kell tenni a beső div re/
+
+
+Client Projector status baar szinek belövése
+Clients Final (Data;HttpService)
+Form
+Contact alja
+Game Feature
+Blog
+WP Rest Api
+
    
-  
-
-     
-
-ABOUT
-Flag component:
-    3 nezettel: fix height fix width -el
-                semmi visible none;
-                kis zaszlo + szöveg
-                nagy zaszlo + szöveg (szöveg magasabba /a div magassaga a zaszlo kephez igazodik/)
-CONTACTS:
-    a formok routolodjanak be ami elsore megjelenik az csak egy "blank" kép.    
+ 
 
 
 

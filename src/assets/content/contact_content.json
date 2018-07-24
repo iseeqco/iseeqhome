@@ -1,0 +1,20 @@
+{
+    "contactDatas":
+        {
+            "projectorDatas":[ 
+                                {"text":"STARTER JOBS IN IT","date":"Piac & Profit, Oct 2017","href":"https://www.piacesprofit.hu/infokom/nehany-tanacs-kezdo-informatikusoknak/"},
+                                {"text":"SALARIES OVER 1 MILLION","date":"Index, Apr 2017","href":"https://index.hu/gazdasag/2017/04/24/az_1_millio_feletti_fizetes_termeszetes_ebben_a_szakmaban/"},
+                                {"text":"HASZON MAGAZIN/PRINTED","date":"Haszon,Dec 2016","href":"https://www.instagram.com/p/BNoroFqAv1o/?taken-by=iseeq.co&hl=en"},
+                                {"text":"FORBES/PRINTED","date":"Forbes,May 2016","href":"https://www.facebook.com/IseeQ.co/photos/a.423699317717856.1073741828.346569202097535/998105830277199/?type=3&theater"},
+                                {"text":"RECRUITER STARTUP FROM DOWNTOWN BUDAPEST","date":"Hrspirit,Sep 2015","href":"https://toborzas-menedzsment.monster.hu/hr/hr-legjobb-gyakorlatok/toborzas-kivalasztas-tanacsok/szakember-kereses/fejvadasz-startup-a-gozsdu-udvarbol.aspx?intcid=hrspirit-redirect"},
+                                {"text":"FIRST INTERVIEW IN HVG","date":"hvg.hu, Sep 2014","href":"http://hvg.hu/enesacegem/20140907_Otven_eve_volt_Puskas_most_hol_vagytok"},
+                                {"text":"ISEEQ:HEADHUNTERS MOVES TO DOWNTOWN","date":"Iroda.hu,Oct 2013","href":"http://blog.iroda.hu/irodapiaci-blog/iseeq-a-reform-fejvadaszok-a-gozsdu-udvarhoz-koltoztek/125822"}
+                            ],
+
+            "galeryPictures":[
+                                {"text":" ","src":""},
+                                {"text":" ","src":""}
+
+                             ]
+        }
+}
