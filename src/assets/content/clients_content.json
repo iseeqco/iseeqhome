@@ -1,4 +1,5 @@
-{"clientDatas":[
+{"clientDatas":
+[
     {
         "logoUrl":"./assets/pictures/clients/gizmo_media_group.jpg",
         "logoAlt":"Gizmo Media Group logo",
@@ -36,28 +37,13 @@
         "clientsPosition":"Head of Big Data Emarsys"
     },
     {
-        "logoUrl":"",
-        "logoAlt":"",
-        "quote":"",
-        "clientPictureUrl":"",
-        "clientPictureAlt":"",
-        "clientName":"",
-        "clientsPosition":""
-
-    },
-    {
-        "logoUrl":"",
-        "logoAlt":"",
-        "quote":"",
-        "clientPictureUrl":"",
-        "clientPictureAlt":"",
-        "clientName":"",
-        "clientsPosition":""
-
+        "logoUrl":"./assets/pictures/clients/greenfox_logo-2.png",
+        "logoAlt":"Green Fox Academy",
+        "quote":" “For me, Iseeq in a few words: quick help, very personal service, short status mails, no useless administrative overhead: exactly what a manager needs when the recruitment war is getting tough” ",
+        "clientPictureUrl":"./assets/pictures/clients/fb-300x300.png",
+        "clientPictureAlt":"BARBARA FAZEKAS",
+        "clientName":"BARBARA FAZEKAS",
+        "clientsPosition":"Director & Co-Founder @ Greenfox"
     }
 ]
-
-
-
-
 }

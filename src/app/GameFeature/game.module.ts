@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 
 import { GameBaseComponent } from './game-base/game-base.component';
 
+
 export const gameRoutes : Routes=[
   {path: '', component:GameBaseComponent}
 ]
@@ -14,5 +15,6 @@ export const gameRoutes : Routes=[
     RouterModule.forChild(gameRoutes)
   ],
   declarations: [GameBaseComponent]
+ 
 })
 export class GameModule { }

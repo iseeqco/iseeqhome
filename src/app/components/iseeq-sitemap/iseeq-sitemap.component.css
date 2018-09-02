@@ -1,0 +1,31 @@
+.base{
+    width:80%;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    position: relative;
+    -webkit-box-shadow: 4px 6px 14px -1px rgba(115,148,110,1);
+    -moz-box-shadow: 4px 6px 14px -1px rgba(115,148,110,1);
+    box-shadow: 4px 6px 14px -1px rgba(115,148,110,1);
+   
+}
+.one-site{
+    
+    width:100%;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin:0px;
+    color:#343399;
+    font-family: "bitbold",Helvetica,Arial,sans-serif;
+    font: size 17px;
+}
+
+a{
+    text-decoration: none;
+    color:#268a56;
+}

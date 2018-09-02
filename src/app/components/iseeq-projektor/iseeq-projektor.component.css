@@ -41,6 +41,7 @@
 }
 
 .img-1{
+    cursor: pointer;
     height:35px;
     width:35px;
     position:absolute;
@@ -52,6 +53,7 @@
 }
 
 .img-2{
+    cursor: pointer;
     float: right;
     height:35px;
     width:35px;

@@ -15,7 +15,7 @@ import { IseeqHomeComponent } from './components/iseeq-home/iseeq-home.component
 import { IseeqFooterComponent } from './components/iseeq-footer/iseeq-footer.component';
 import { IseeqSitemapComponent } from './components/iseeq-sitemap/iseeq-sitemap.component';
 import { IseeqPrivacypolicyComponent } from './components/iseeq-privacypolicy/iseeq-privacypolicy.component';
-
+import { IseeqWpContentService } from './services/iseeq-wp-content-service';
 
 export const routes: Routes =[
   {path: 'SiteMap',component:IseeqSitemapComponent},
@@ -34,7 +34,7 @@ export const routes: Routes =[
     IseeqHomeComponent,
     IseeqFooterComponent,
     IseeqSitemapComponent,
-    IseeqPrivacypolicyComponent,
+    IseeqPrivacypolicyComponent, 
   ],
 
   imports: [
@@ -47,7 +47,8 @@ export const routes: Routes =[
 
   providers: [
     IseeqHttpService,
-    IseeqNavigationService
+    IseeqNavigationService,
+    IseeqWpContentService
   ],
 
   bootstrap: [AppComponent]

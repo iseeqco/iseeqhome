@@ -1,3 +1,32 @@
-<div class="site-base">
-    <h2 class="site-title">NEWS</h2>
+<div class="site-base2" (mouseleave)=onMouseLeave($event)>
+  <h2 class="site-title">NEWS</h2>
+
+  <div class="news-cont">
+      <div class="dekoration" style="position:absolute;top:15px;left:15px;"></div>    
+      <div class="dekoration" style="position:absolute;top:15px;right:15px;"></div>
+      <div class="dekoration" style="position:absolute;bottom:15px;left:15px;"></div>
+      <div class="dekoration" style="position:absolute;bottom:15px;right:15px;"></div>
+
+              
+     <div *ngFor="let postData of displayedPostDatas" class="post-card">
+        <div class="dekoration2" style="position:absolute;top:10px;left:5px;"></div>    
+        <div class="dekoration2" style="position:absolute;top:10px;right:5px;"></div>
+        <div class="dekoration2" style="position:absolute;bottom:10px;left:5px;"></div>
+        <div class="dekoration2" style="position:absolute;bottom:10px;right:5px;"></div>
+
+        <a [href]=postData.siteLink target="_blank">
+          <span class="post-date">{{postData.date}}</span><br>
+          <div class="post-title">
+              <h2>{{postData.title}}</h2>
+            </div>
+          <img class="news-pictures"[src]=postData.pictureLink [alt]=postData.title height="270"> 
+        </a>
+      </div>
+    
+  </div>
+
+  <div class="button-cont" *ngIf="moreNews">
+    <app-iseeq-button text="More News" textcolor="white" background="#343399" 
+                      size="m" shadow="#2c2b6b" (click)="showMoreNews()"></app-iseeq-button>
+  </div>
 </div>

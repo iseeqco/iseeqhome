@@ -92,7 +92,6 @@ export class IseeqProjektorComponent implements OnInit{
   }
 
   onMouseMove(event:any) : void {
-    console.log("mouse moove")
     this.aktuellScreenx=event.screenX;
     this.relativeNavValue=this.relativeNavValue+(this.previouseScreenx-this.aktuellScreenx);
     this.previouseScreenx=this.aktuellScreenx;

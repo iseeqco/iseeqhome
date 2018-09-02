@@ -1,3 +1,6 @@
-<p>
-  iseeq-sitemap works!
-</p>
+<div class="base">
+  <div class="one-site" *ngFor="let site of sites">
+    <h3>{{site.name}}</h3>
+    <a [href]=siteBaseHref+site.route>{{siteBaseHref+site.route}}</a>
+  </div>
+</div>

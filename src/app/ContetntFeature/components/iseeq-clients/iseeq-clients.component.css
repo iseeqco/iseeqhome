@@ -2,6 +2,7 @@
     background-color:rgb(247, 247, 247);
     padding-top:30px;
     padding-bottom: 30px;
+    min-height: 850px;
 }
 
 .client-container{
@@ -22,7 +23,7 @@ app-iseeq-projektor{
 .clients-card{
     margin:10px;
     width:550px;
-    min-height:550px;
+    min-height:600px;
     background:white;
     box-shadow:5px 5px 15px rgba(0,0,0,0.1);
     padding-bottom: 15px;
@@ -31,13 +32,18 @@ app-iseeq-projektor{
     -khtml-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none; 
-     user-select: none; 
+     user-select: none;
 }
 
 .clients-logo{
     padding-top:40px;
     display: flex;
     justify-content: center;
+}
+.clients-logo>img{
+    max-width:280px;
+    max-height:180px;
+   
 }
 
 .clients-quote{
@@ -81,11 +87,22 @@ app-iseeq-projektor{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-right:10px;
 }
 
 @media screen and (max-width: 600px) {
     .clients-card{
         width:300px;
         margin:0px;
+    }
+    .client-container{
+        height:800px;
+    }
+    .cities{
+       width:120px;
+    }
+    .client-cities{
+        position: relative;
+        bottom:100px;
     }
 }

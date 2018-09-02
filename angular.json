@@ -25,7 +25,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+               "d:/__Projektek/iseeq/iseeq/node_modules/phaser-ce/build/custom/pixi.js",
+              "d:/__Projektek/iseeq/iseeq/node_modules/phaser-ce/build/custom/p2.js",
+              "d:/__Projektek/iseeq/iseeq/node_modules/phaser-ce/build/custom/phaser-split.js"]
           },
           "configurations": {
             "production": {
@@ -74,7 +77,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "d:/__Projektek/iseeq/iseeq/node_modules/phaser-ce/build/custom/pixi.js",
+              "d:/__Projektek/iseeq/iseeq/node_modules/phaser-ce/build/custom/p2.js",
+              "d:/__Projektek/iseeq/iseeq/node_modules/phaser-ce/build/custom/phaser-split.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

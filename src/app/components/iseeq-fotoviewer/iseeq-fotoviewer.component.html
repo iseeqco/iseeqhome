@@ -1,0 +1,43 @@
+<div *ngIf="!isViewOpen" class="foto-viewer-face" (click)="openViewer()">
+  <h3 class="skew">ISEEQ OFFICE</h3>
+  <img [src]="fotos[0]">
+
+</div>
+
+
+
+
+<div #fotoViewerBase *ngIf="isViewOpen" class="fotoviewer-base">
+  
+  <div class="foto-header">
+    
+    <div class="counter">
+      {{counter+1}}/{{fotosLenght}}
+    </div>
+
+    <div class="ikons">
+      <a [href]="fotos[counter]" [download]="fotos[counter]">
+        <img src="./assets/pictures/ikon/baseline-vertical_align_bottom-24px.svg" alt="download">
+      </a>
+      <img src="./assets/pictures/ikon/baseline-close-lightgreen-24px.svg" alt="close" (click)="closeViewer()">
+    </div>
+  
+  </div>
+
+  <div class="foto-body">
+    
+    <div class="left-nav" (click)="stepBack()">
+        <img src="/assets/pictures/ikon/baseline-play_arrow-gray_24px.svg" alt="step left">
+    </div>
+
+    <div class="foto-container">
+      <img class="foto-container-img" [src]="fotos[counter]">
+    </div>
+
+    <div class="right-nav"  (click)="stepFor()">
+        <img src="/assets/pictures/ikon/baseline-play_arrow-gray_24px.svg" alt="step right">
+    </div>
+
+  </div>
+
+</div>

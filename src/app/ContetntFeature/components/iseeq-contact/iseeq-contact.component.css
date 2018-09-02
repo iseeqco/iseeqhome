@@ -33,12 +33,47 @@
 }
 
 .form-container{
-   
+   width:100%;
 }
 
 .info-container{
+    position: relative;
     margin-top: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-item{
+
+    overflow: hidden;
+    position: relative;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+.projektor-container{
+    background-image: url("/assets/pictures/contact/iseeq_nagyito.svg");
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position:left;
+    text-align:center;
+    background-color:rgb(69, 212, 139);
+}
+.skew{
+    z-index: 2;
+    position: absolute;
+    text-align:center;
+    width:200px;
+    background-color:#343399;
+    color:white;
+    margin-top: 40px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    font-size:15px;
+    font-family: "open_sans",Helvetica,Arial,sans-serif;
+    transform:skewY(-5deg) translate3d(70%,0,0);
 }
 
 .card{
@@ -52,6 +87,12 @@
     padding-top: 100px;
     box-sizing: border-box;
     line-height: 300%;
+    width:450px;
+    height:350px;
+}
+
+.projector-place-holder{
+    height:50px;
 }
 a{
     color:white;
@@ -61,9 +102,6 @@ a{
     font-family: "open_sans",Helvetica,Arial,sans-serif;
 }
 
-.medium-and-date{
-
-}
 
 @media only screen and (max-width: 1000px) {
     .button-container{
@@ -78,5 +116,37 @@ a{
     .text-container{
         line-height: 100%;
     }
+
+@media only screen and (max-width: 500px) {
+    iframe{
+        width:400px;
+    }
+    .info-item{
+        margin:0px;
+    }
+    .projektor-container{
+        background-size: 100%;
+       
+    }
+    .card{
+        padding-top: 100px;
+        line-height: 150%;
+        width:300px;
+        height:270px;
+    }
+    .projector-place-holder{
+        height:20px;
+    }
+
+    .skew{
+        transform:skewY(-5deg) translate3d(25%,0,0);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    iframe{
+        width:300px;
+    }
+}
 
 }

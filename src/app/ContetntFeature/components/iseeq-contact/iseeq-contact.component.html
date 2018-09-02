@@ -9,38 +9,43 @@
     </div>
 
     <div class=button-container>
-        <app-iseeq-button class="button" text="Looking for job" size="l" textcolor="white" background="#45d48b" shadow="#319662"></app-iseeq-button>
-        <app-iseeq-button class="button" text="Working with us" size="l" textcolor="white" background="#45d48b" shadow="#319662"></app-iseeq-button>
-        <app-iseeq-button class="button" text="Join us" size="l" textcolor="white" background="#45d48b" shadow="#319662" width="270px"></app-iseeq-button>
+        <app-iseeq-button (click)="setFormMirror('looking')" class="button" text="Looking for job" size="l" textcolor="white" background="#45d48b" shadow="#319662"></app-iseeq-button>
+        <app-iseeq-button (click)="setFormMirror('working')" class="button" text="Working with us" size="l" textcolor="white" background="#45d48b" shadow="#319662"></app-iseeq-button>
+        <app-iseeq-button (click)="setFormMirror('join')" class="button" text="Join us" size="l" textcolor="white" background="#45d48b" shadow="#319662" width="270px"></app-iseeq-button>
     </div>
 
     <div class="form-container">
-               form cont
+                
+               <app-iseeq-form [formMirror]=formMirror [textArea]=textArea [selectLabel]=selectLabel></app-iseeq-form>
     </div>
 
     <div class="info-container">
 
         <div class="info-item">
-                    inf item
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1347.7832065576263!2d19.05788423981463!3d47.49835945144808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbbcd5a49492422!2sIseeQ+Kft.!5e0!3m2!1shu!2shu!4v1533066566105" width="400" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
         <div class="info-item">
-            <div style="border:2px solid red; background-color:lightgreen;">
-            <app-iseeq-projektor [projektorWidth]="'454px'" [statusBar]=true buttonSource="/assets/pictures/ikon/arrow-full_green.svg" 
-                                 [membersCentered]=true statusBarBackgroundColor="green" statusBarColor="white">
-                <app-iseeq-projectable>
-                    <div class="card"style="width:450px;height:350px;border:2px solid green">
-                        <a href="" alt="" target="_blank">Text</a><br>
-                        <span class="medium-and-date">date</span>
-                    </div>
-                </app-iseeq-projectable>
-            </app-iseeq-projektor>
+            <div class="projektor-container">
+                <h3 class="skew">ISEEQ IN THE PRESS</h3>
+                <app-iseeq-projektor
+                    [projektorWidth]=projektorWidth [statusBar]=true buttonSource="/assets/pictures/ikon/baseline-play_arrow-24px.svg" 
+                    [membersCentered]=true statusBarBackgroundColor="#319662" statusBarColor="white">
+                    <app-iseeq-projectable *ngFor="let projectorData of projectorDatas">
+                        <div class="card">
+                            <div class="projector-place-holder"></div>
+                            <a [href]=projectorData.href target="_blank">{{projectorData.text}}</a><br>
+                            <span class="medium-and-date">{{projectorData.date}}</span>
+                        </div>
+                    </app-iseeq-projectable>
+                </app-iseeq-projektor>
             </div>
         </div>
 
         <div class="info-item">
-            inf item
+            <app-iseeq-fotoviewer [fotos]=fotos></app-iseeq-fotoviewer>
         </div>
 
     </div>
+
 </div>

@@ -1,20 +1,23 @@
 
+Index.html kezdő kép impl.
 
-Client Projector status baar szinek belövése
-Clients Final (Data;HttpService)
-Form
-Contact alja
+
 Game Feature
-Blog
-WP Rest Api
-
-   
- 
-
-
-
+Game képek kitisztitasa/Asettsek atpakolása featur-on ként/
+Game testfonts kitisztitas
+----------------------------------------------------------------------------------------------
+Contact KOmponent galery pictures megvizsgálni (valamit lekér de van egy fotos változó is)
+WP Rest Api /Team;Galéria,Iseeq in the news,NEWS/
+----------------------------------------------------------------------------------------------
+Seo Meta es html Tag-ek servicek
+Service workers
+SSR
+head mete es favico+Site Title
 lang atribute to the page
-Game Faeature
+
+
+
+
 
 Nice  To Have:
    
@@ -22,101 +25,3 @@ Nice  To Have:
    -- java script browserbe true/false ellenőrzés az index HTML-be.
    -- Json-be tenni a Services site tartalmat
    
-   
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------------------------SABLONOK---------------------
-   console.log("body offSetH"+document.body.offsetHeight)
-       console.log("scrolly"+window.scrollY)
-       console.log("W innie heigh"+window.innerHeight)
-       console.log(event.touches[0].clientY)
-
-
-   TOUCH NAVIGÁCIÓ
-   -------------------------
-        let aktuel:number
-        aktuel=event.touches[0].clientY
-        
-        if ( (aktuel>this.elozoTouchPos) && (window.pageYOffset==0) ){console.log("felfele scroll NAVI")}
-        if (aktuel<this.elozoTouchPos){console.log("lefele scroll")}
-        this.elozoTouchPos=aktuel;
-
-
-
--------------------------------------------------------------------------------
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}
-
-
-
-https://medium.com/@prashantramnyc/how-to-build-a-simple-sprite-animation-in-javascript-b764644244aa
-http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/
-<span>iseeq-home works!</span>
-<h2>Madách Imre</h2>
-<h3>sdfsdfsdfdsfdfsd</h3>
-<h4>Ravetzky Richárd</h4>
-
-
-
-span{
-    font-family: 'bitbold'
-}
-
-h2{
-    font-family: 'brandonbld',Helvetica,Arial,sans-serif;
-    
-}
-
-h3{
-    font-family: 'opensans'
-}
-
-h4{
-    font-family: 'opensansbld'
-}
-
-
-
-https://alligator.io/angular/animating-route-changes/
-https://angularfirebase.com/snippets/router-transition-animations-with-angular-4/
-http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-example
-
-
-https://www.concretepage.com/angular-2/angular-2-4-contentchild-and-contentchildren-example
-
-
-
-
-
-
-https://www.youtube.com/watch?v=Iducm-RNKvA
-
-
-
-
-https://www.youtube.com/watch?v=Iducm-RNKvA&t=2089s
-
-
-https://www.youtube.com/watch?v=nnsGwS7sFeo&list=RDQMauMeh8VkXb4&start_radio=1
-
-
-
-
-
-
-
-
-
-
-
-
-

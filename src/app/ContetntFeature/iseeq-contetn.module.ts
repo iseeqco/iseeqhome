@@ -20,13 +20,11 @@ import { IseeqProjektorComponent } from '../components/iseeq-projektor/iseeq-pro
 import { IseeqContentSiteDirective } from './direktives/iseeq-content-site.direktive';
 import { IseeqFlagComponent } from './components/iseeq-about/iseeq-flag/iseeq-flag.component';
 import { IseeqProjectableComponent } from '../components/iseeq-projektor/iseeq-projectable.component';
+import { IseeqFotoviewerComponent } from '../components/iseeq-fotoviewer/iseeq-fotoviewer.component';
+import { IseeqFormComponent } from 'src/app/components/iseeq-form/iseeq-form.component';
 
-
-
-
-
-
-
+import { IseeqFormService } from '../components/iseeq-form/iseeq-form.service';
+import { ReactiveFormsModule, FormsModule } from '../../../node_modules/@angular/forms';
 
 
 export const contentRoutes : Routes=[
@@ -37,8 +35,10 @@ export const contentRoutes : Routes=[
     CommonModule,
     RouterModule.forChild(contentRoutes),
     IseeqContentMaterialModule,
-
+    FormsModule,
+    ReactiveFormsModule
   ],
+  
   declarations: [
     IseeqServicesComponent,
     IseeqBaseContentComponent,
@@ -52,7 +52,9 @@ export const contentRoutes : Routes=[
     IseeqButtonComponent,
     IseeqProjektorComponent,
     IseeqProjectableComponent,
-    IseeqFlagComponent
+    IseeqFlagComponent,
+    IseeqFotoviewerComponent,
+    IseeqFormComponent
   ],
   exports:[
     IseeqButtonComponent
@@ -62,7 +64,7 @@ export const contentRoutes : Routes=[
     
   ],
   providers: [
-   
+    IseeqFormService
   ],
   })
 export class IseeqContetnModule { }

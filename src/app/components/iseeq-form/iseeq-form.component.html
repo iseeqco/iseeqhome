@@ -1,0 +1,57 @@
+   
+<p *ngIf="formMirror.phone">All the blank fields should be filled out in order to send the message.</p>
+
+<form [formGroup]="iseeqFormGroup">
+  <div class="form-base">
+
+    <div class="text-div" *ngIf="formMirror.company">
+        <label>COMPANY</label>
+        <input class="text-type" type="text" formControlName="company">
+    </div>
+
+    <div class="text-div" *ngIf="formMirror.name">
+        <label>NAME</label>
+        <input class="text-type" type="text" formControlName="name">
+    </div>
+
+    <div class="text-div" *ngIf="formMirror.email">
+        <label>EMAIL</label>
+        <input class="text-type" type="email" formControlName="email">
+    </div>
+
+    <div class="text-div" *ngIf="formMirror.phone">
+        <label>PHONE</label>
+        <input class="text-type" type="tel" formControlName="phone">
+    </div>
+
+    <div class="text-div" *ngIf="formMirror.linkedin">
+        <label>LINKEDIN</label>
+        <input class="text-type" type="url" formControlName="linkedin">
+    </div>
+
+    <div class="file-div" *ngIf="formMirror.file">
+        <label class="inputfile"> {{fileInputText}}
+            <input type="file" (change)="prepeareFile($event)" formControlName="file">
+        </label>
+    </div>
+
+    <div class="text-div" *ngIf="formMirror.carrier">
+        <label>{{selectLabel}}</label>
+        <select class="text-type"formControlName="carrier">
+            <option value="IT">IT</option>
+            <option value="Sales&Marketing">Sales&Marketing</option>
+            <option value="Finance">Finance</option>
+            <option value="HR">HR</option>
+        </select>
+    </div>
+
+    <div class="text-div" *ngIf="formMirror.message">
+        <label>{{textArea}}</label>
+        <textarea class="text-area-type" rows="20" cols="56" formControlName="message"></textarea>
+    </div>
+  </div>
+</form>
+
+<div class="button-div">
+    <button [disabled]=isDiasbled (click)="sendForm()" *ngIf="formMirror.phone">SEND</button>
+</div>

@@ -1,31 +1,27 @@
 <div class="site-base2">
     <h2 class="site-title">CLIENTS</h2>
     <div class="client-container">
-        <app-iseeq-projektor [membersCentered]=true [projektorWidth]=projectorWidth [statusBar]=true [startPosition]="0" buttonSource="/assets/pictures/ikon/arrow-full_green.svg" >
-                <app-iseeq-projectable>
+        <app-iseeq-projektor [membersCentered]=true [projektorWidth]=projectorWidth [statusBar]=true [startPosition]="0" 
+                              buttonSource="/assets/pictures/ikon/arrow-full_green.svg" statusBarBackgroundColor="lightgray" statusBarColor="#45d48b">
+                <app-iseeq-projectable *ngFor="let clientData of clientDatas">
                     <div class="clients-card">
                             
                         <div class="clients-logo">
-                            <img src="./assets/pictures/clients/gizmo_media_group.jpg" alt="Gizmo Media Group logo">
+                            <img [src]=clientData.logoUrl [alt]=clientData.logoAlt>
                         </div>
                 
                         <div class="clients-quote">
-                            <p> “IseeQ have been providing recruitment services for us for more than 3 years. 
-                                During this time they were always quickly adjusting to our changed priorities, 
-                                moreover, they even helped finetuning our hiring processes. Their up-to-date 
-                                feedback about the changes in the Hungarian job market makes them one of our most 
-                                valuable recruitment partners.” 
-                            </p>
+                            <p>{{clientData.quote}}</p>
                         </div>
                 
                         <div class="clients-data">
                 
                             <div class="clients-data-picture">
-                                <img src="./assets/pictures/clients/eszpee_ping-300x300.jpg" alt="Peter Szasz">
+                                <img [src]=clientData.clientPictureUrl [alt]=clientData.clientPictureAlt>
                             </div>
                 
                             <div class="clients-data-text">
-                                <span class="bold">PETER SZÁSZ</span><br> Managing Director @ Gizmo Media Group /Budapest/
+                                <span class="bold">{{clientData.clientName}}</span><br>{{clientData.clientsPosition}}
                             </div>
                             
                         </div>
@@ -35,11 +31,11 @@
         </app-iseeq-projektor>
     </div>
     <div class="client-cities">
-        <img src="./assets/pictures/clients/01_budapest.png" alt="Budapest">
-        <img src="./assets/pictures/clients/02_coppenhagen.png" alt="Coppenhagen">
-        <img src="./assets/pictures/clients/03_berlin.png" alt="Berlin">
-        <img src="./assets/pictures/clients/04_amsterdam.png" alt="Amsterdam">
-        <img src="./assets/pictures/clients/05_paris.png" alt="Paris">
-        <img src="./assets/pictures/clients/06_hongkong.png" alt="Hon Kong">
+        <img class="cities" src="./assets/pictures/clients/01_budapest.png" alt="Budapest">
+        <img class="cities" src="./assets/pictures/clients/02_coppenhagen.png" alt="Coppenhagen">
+        <img class="cities" src="./assets/pictures/clients/03_berlin.png" alt="Berlin">
+        <img class="cities" src="./assets/pictures/clients/04_amsterdam.png" alt="Amsterdam">
+        <img class="cities" src="./assets/pictures/clients/05_paris.png" alt="Paris">
+        <img class="cities" src="./assets/pictures/clients/06_hongkong.png" alt="Hon Kong">
     </div>
 </div>

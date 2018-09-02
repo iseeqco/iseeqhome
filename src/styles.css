@@ -19,6 +19,7 @@
     font-family:'brandon';
     src: url('./assets/fonts/brandon_reg-webfont.woff') format('woff'),
          url('./assets/fonts/brandon_reg-webfont.woff2') format('woff2');
+        
 }
 @font-face {
     font-family:'brandonbld';
@@ -67,5 +68,12 @@ a{
     color:#343399;
     font-family: "bitbold",Helvetica,Arial,sans-serif;
     text-align: center;
+}
+canvas{
+   
+    position: absolute;
+    top:0px;
+    left:0px;
+    
 }
 

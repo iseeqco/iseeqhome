@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import { IseeqNavigationService } from '../../services/iseeq-navigation.service';
 
@@ -28,11 +28,14 @@ export class IseeqHomeComponent{
   private coin2Element:ElementRef;
 @ViewChild('coin3')
   private coin3Element:ElementRef;
+@ViewChild('imageDiv')
+  private imageDivElement:ElementRef;
 
   constructor(
     private router:Router,
     private element:ElementRef,
     private navService:IseeqNavigationService,
+    private renderer: Renderer2
   ) 
   {
    
@@ -40,7 +43,7 @@ export class IseeqHomeComponent{
   ngOnInit(){
     for(let i=0;i<this.navService.componentRemote.length;i++){this.navService.componentRemote[i]=false}
     this.navService.areSitesOpen=false;
-    
+    this.setBackgroundPosition()
   }
   ngAfterContentInit(){
     this.startAnimation()
@@ -64,5 +67,16 @@ export class IseeqHomeComponent{
     this.spriteAnimation(this.coin2Element,20,40,160)
     this.spriteAnimation(this.coin3Element,20,40,200)
   }
+
+  setBackgroundPosition(){
+    let pisturesHeight = 765-120;
+    let windowHeight = window.innerHeight;
+    let diference = windowHeight-pisturesHeight;
+    let newPosition =120-diference;
+    if(newPosition < 2) {newPosition=1}
+    let x :string = newPosition.toString();
+    if (diference > 0){
+      this.renderer.setStyle(this.imageDivElement.nativeElement,'top','-'+x+'px');
+    }
+  }
 }
- /*Háttérkép KB méret optimalizálás ;   0/1 feliratok; start game or scroll felirat; mobil nézet;*/

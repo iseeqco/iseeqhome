@@ -33,8 +33,8 @@ a{
     left:50%;
     position: relative;
     top:-120px;
-    height:930px;
-    min-width: 1350px;
+    height:765px;
+    min-width: 1366px;
     max-width: 1600px;
     background:url("/assets/pictures/home/background_low_q.jpg");
     background-size:100% 100%;
@@ -43,8 +43,8 @@ a{
 }
 
 .cat {
-    position: relative;
-    top:337px;
+    position: absolute;
+    bottom:375px;
     left:220px;
     height: 40px;
     width:  40px;
@@ -79,7 +79,7 @@ a{
   .game-button{
       position: absolute;
       left:50%;
-      top:610px;
+      bottom:150px;
       transform: translate(-50%,0%)
   }
 
@@ -88,7 +88,7 @@ a{
       position: absolute;
       left:50%;
       transform: translate(-50%,0%);
-      top:700px;
+      bottom:70px;
       color:white;
       font-size: 15px;
   }

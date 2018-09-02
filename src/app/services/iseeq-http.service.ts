@@ -7,6 +7,8 @@ import {NavigationData } from '../datatypes/iseeq-navigation.data';
 import { IseeqFooterConfigData } from "src/app/datatypes/iseeq-footer-config.data";
 import { TeamMembers } from '../datatypes/iseeq-team-member';
 import { AboutDatas } from '../datatypes/iseeq-about.data';
+import { ClientDatas } from '../datatypes/iseeq-clients.data';
+import { ContactDatas } from '../datatypes/iseeq-contact.data';
 
 @Injectable()
 export class IseeqHttpService{
@@ -48,5 +50,17 @@ getAboutContent(){
     let file:string="about_content.json";
     let response=this.http.get<AboutDatas>(url+file);
     return response;
+}
+getClientContent(){
+    let url:string="./assets/content/";
+    let file:string="clients_content.json";
+    let response=this.http.get<ClientDatas>(url+file);
+    return response;
+}
+getContactContent(){
+    let url:string="./assets/content/";
+    let file:string="contact_content.json";
+    let response=this.http.get<ContactDatas>(url+file);
+    return response; 
 }
 }

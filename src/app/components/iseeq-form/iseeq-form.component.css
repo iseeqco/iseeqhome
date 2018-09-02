@@ -1,0 +1,141 @@
+p{
+    text-align: center;
+    font-size: 14px;
+    color:gray;
+    margin-top:20px;
+}
+
+label{
+    font-size: 10px;
+    color:gray;
+}
+.form-base{
+    margin-left: 15%;
+    width:70%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text-div{
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.text-type{
+    box-sizing: content-box;
+    height:50px;
+    width: 400px;
+    border-left: 2px solid #343399;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    font-size: 17px;
+    color:#343399;
+    padding-left: 10px;
+}
+.file-div{
+    position: relative;
+    border-left: 2px solid #343399;
+    margin-right: 30px;
+    margin-top: 25px;
+    width:410px;
+    height:50px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.inputfile{
+    font-size:15px;
+    position: absolute;
+    top:10px;
+    cursor: pointer;
+    padding-left:0px;
+    padding-right:200px;
+    padding-top: 5px;
+    padding-bottom:5px; 
+    z-index:2;
+}
+.inputfile [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+.text-area-type{
+    border:none;
+}
+.button-div{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+button{
+    color:white;
+    background-color: #343399;
+    font-family: "bitbold",Helvetica,Arial,sans-serif;
+    border:none;
+    width:120px;
+    height:50px;
+    font-size:16px;
+}
+button:hover{
+    -ms-transform: translate(-3px,-3px);
+    -webkit-transform: translate(-3px,-3px);
+    transform: translate(-3px,-3px);
+    box-shadow:3px 3px 0px 0px #22216d;
+}
+button:disabled{
+    opacity:0.2;
+}
+
+@media only screen and (max-width: 1200px) {
+    .file-div{
+        right:0px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .form-base{
+        margin-left: 2%;
+        width:97%;
+    }
+
+    .text-type{
+        height:50px;
+        width: 270px;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .file-div{
+        right:10px;
+        margin-right:0px;
+        margin-top: 25px;
+        width:270px;
+    }
+
+    .inputfile{
+        padding-right:100px;
+    }
+    
+    .text-div{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .text-area-type{
+        width:100%;
+    }
+}

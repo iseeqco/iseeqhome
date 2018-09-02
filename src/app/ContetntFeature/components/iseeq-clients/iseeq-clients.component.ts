@@ -1,4 +1,6 @@
 import { Component, HostListener} from '@angular/core';
+import { IseeqHttpService } from '../../../services/iseeq-http.service';
+import { ClientDatas } from '../../../datatypes/iseeq-clients.data';
 
 
 @Component({
@@ -10,13 +12,20 @@ export class IseeqClientsComponent {
  
   projectorWidth:string;
 
+  clientDatas:ClientData [];
 
-  constructor(){
+  constructor(
+    private _http:IseeqHttpService
+  )
+  {
 
   }
 
  ngOnInit(){
   this.setProjectorWidth();
+  this._http.getClientContent().subscribe((data)=>{
+    this.clientDatas=data.clientDatas;    
+  })
  }
 
 setProjectorWidth(){
